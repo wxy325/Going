@@ -7,14 +7,16 @@
 //
 
 #import "WXYAppDelegate.h"
+#import "WXYRootViewController.h"
 
 @implementation WXYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    WXYRootViewController* vc = [[WXYRootViewController alloc] init];
+    UINavigationController* navVC = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];
     return YES;
 }

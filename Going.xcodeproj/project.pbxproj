@@ -19,6 +19,60 @@
 		182D622C18C5BC8B00D85934 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182D621418C5BC8B00D85934 /* UIKit.framework */; };
 		182D623418C5BC8B00D85934 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 182D623218C5BC8B00D85934 /* InfoPlist.strings */; };
 		182D623618C5BC8B00D85934 /* GoingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D623518C5BC8B00D85934 /* GoingTests.m */; };
+		182D628D18C5EEC500D85934 /* NSDictionary+noNilValueForKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D624518C5EEC500D85934 /* NSDictionary+noNilValueForKey.m */; };
+		182D628E18C5EEC500D85934 /* NSDictionary+noNilValueForKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D624518C5EEC500D85934 /* NSDictionary+noNilValueForKey.m */; };
+		182D628F18C5EEC500D85934 /* UIViewController+ShowHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D624718C5EEC500D85934 /* UIViewController+ShowHud.m */; };
+		182D629018C5EEC500D85934 /* UIViewController+ShowHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D624718C5EEC500D85934 /* UIViewController+ShowHud.m */; };
+		182D629D18C5EEC500D85934 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D625918C5EEC500D85934 /* UserInfo.m */; };
+		182D629E18C5EEC500D85934 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D625918C5EEC500D85934 /* UserInfo.m */; };
+		182D629F18C5EEC500D85934 /* WXYSettingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D625C18C5EEC500D85934 /* WXYSettingManager.m */; };
+		182D62A018C5EEC500D85934 /* WXYSettingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D625C18C5EEC500D85934 /* WXYSettingManager.m */; };
+		182D62A118C5EEC500D85934 /* WXYDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D625E18C5EEC500D85934 /* WXYDataModel.m */; };
+		182D62A218C5EEC500D85934 /* WXYDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D625E18C5EEC500D85934 /* WXYDataModel.m */; };
+		182D62A318C5EEC500D85934 /* WXYError.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D626118C5EEC500D85934 /* WXYError.m */; };
+		182D62A418C5EEC500D85934 /* WXYError.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D626118C5EEC500D85934 /* WXYError.m */; };
+		182D62A518C5EEC500D85934 /* WXYNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D626318C5EEC500D85934 /* WXYNetworkEngine.m */; };
+		182D62A618C5EEC500D85934 /* WXYNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D626318C5EEC500D85934 /* WXYNetworkEngine.m */; };
+		182D62A718C5EEC500D85934 /* WXYNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D626518C5EEC500D85934 /* WXYNetworkOperation.m */; };
+		182D62A818C5EEC500D85934 /* WXYNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D626518C5EEC500D85934 /* WXYNetworkOperation.m */; };
+		182D62AB18C5EEC500D85934 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D626A18C5EEC500D85934 /* MBProgressHUD.m */; };
+		182D62AC18C5EEC500D85934 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D626A18C5EEC500D85934 /* MBProgressHUD.m */; };
+		182D62AD18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D626F18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.m */; };
+		182D62AE18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D626F18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.m */; };
+		182D62AF18C5EEC500D85934 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627118C5EEC500D85934 /* NSData+MKBase64.m */; };
+		182D62B018C5EEC500D85934 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627118C5EEC500D85934 /* NSData+MKBase64.m */; };
+		182D62B118C5EEC500D85934 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627318C5EEC500D85934 /* NSDate+RFC1123.m */; };
+		182D62B218C5EEC500D85934 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627318C5EEC500D85934 /* NSDate+RFC1123.m */; };
+		182D62B318C5EEC500D85934 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627518C5EEC500D85934 /* NSDictionary+RequestEncoding.m */; };
+		182D62B418C5EEC500D85934 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627518C5EEC500D85934 /* NSDictionary+RequestEncoding.m */; };
+		182D62B518C5EEC500D85934 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627718C5EEC500D85934 /* NSString+MKNetworkKitAdditions.m */; };
+		182D62B618C5EEC500D85934 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627718C5EEC500D85934 /* NSString+MKNetworkKitAdditions.m */; };
+		182D62B718C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627918C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		182D62B818C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627918C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		182D62B918C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627B18C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.m */; };
+		182D62BA18C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627B18C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.m */; };
+		182D62BB18C5EEC500D85934 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627D18C5EEC500D85934 /* MKNetworkEngine.m */; };
+		182D62BC18C5EEC500D85934 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D627D18C5EEC500D85934 /* MKNetworkEngine.m */; };
+		182D62BD18C5EEC500D85934 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D628018C5EEC500D85934 /* MKNetworkOperation.m */; };
+		182D62BE18C5EEC500D85934 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D628018C5EEC500D85934 /* MKNetworkOperation.m */; };
+		182D62BF18C5EEC500D85934 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D628318C5EEC500D85934 /* Reachability.m */; };
+		182D62C018C5EEC500D85934 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D628318C5EEC500D85934 /* Reachability.m */; };
+		182D62CD18C5EF5C00D85934 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 182D62C918C5EF5C00D85934 /* checkmark.png */; };
+		182D62CE18C5EF5C00D85934 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 182D62C918C5EF5C00D85934 /* checkmark.png */; };
+		182D62CF18C5EF5C00D85934 /* checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182D62CA18C5EF5C00D85934 /* checkmark@2x.png */; };
+		182D62D018C5EF5C00D85934 /* checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182D62CA18C5EF5C00D85934 /* checkmark@2x.png */; };
+		182D62D118C5EF5C00D85934 /* exclamationmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 182D62CB18C5EF5C00D85934 /* exclamationmark.png */; };
+		182D62D218C5EF5C00D85934 /* exclamationmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 182D62CB18C5EF5C00D85934 /* exclamationmark.png */; };
+		182D62D318C5EF5C00D85934 /* exclamationmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182D62CC18C5EF5C00D85934 /* exclamationmark@2x.png */; };
+		182D62D418C5EF5C00D85934 /* exclamationmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182D62CC18C5EF5C00D85934 /* exclamationmark@2x.png */; };
+		182D62DA18C5F0DA00D85934 /* WXYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D62D818C5F0DA00D85934 /* WXYRootViewController.m */; };
+		182D62DB18C5F0DA00D85934 /* WXYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D62D818C5F0DA00D85934 /* WXYRootViewController.m */; };
+		182D62DC18C5F0DA00D85934 /* WXYRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D62D918C5F0DA00D85934 /* WXYRootViewController.xib */; };
+		182D62DD18C5F0DA00D85934 /* WXYRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D62D918C5F0DA00D85934 /* WXYRootViewController.xib */; };
+		182D62E118C5F12C00D85934 /* WXYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D62DF18C5F12C00D85934 /* WXYLoginViewController.m */; };
+		182D62E218C5F12C00D85934 /* WXYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D62DF18C5F12C00D85934 /* WXYLoginViewController.m */; };
+		182D62E318C5F12C00D85934 /* WXYLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D62E018C5F12C00D85934 /* WXYLoginViewController.xib */; };
+		182D62E418C5F12C00D85934 /* WXYLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D62E018C5F12C00D85934 /* WXYLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +82,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 182D620C18C5BC8B00D85934;
 			remoteInfo = Going;
+		};
+		182D62C218C5EEC500D85934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182D628718C5EEC500D85934 /* MKNetworkKit-iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABB5C25C148B3AE00056D3E9;
+			remoteInfo = "MKNetworkKit-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +109,60 @@
 		182D623118C5BC8B00D85934 /* GoingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoingTests-Info.plist"; sourceTree = "<group>"; };
 		182D623318C5BC8B00D85934 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		182D623518C5BC8B00D85934 /* GoingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoingTests.m; sourceTree = "<group>"; };
+		182D624418C5EEC500D85934 /* NSDictionary+noNilValueForKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+noNilValueForKey.h"; sourceTree = "<group>"; };
+		182D624518C5EEC500D85934 /* NSDictionary+noNilValueForKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+noNilValueForKey.m"; sourceTree = "<group>"; };
+		182D624618C5EEC500D85934 /* UIViewController+ShowHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ShowHud.h"; sourceTree = "<group>"; };
+		182D624718C5EEC500D85934 /* UIViewController+ShowHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ShowHud.m"; sourceTree = "<group>"; };
+		182D624818C5EEC500D85934 /* WXYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYExtension.h; sourceTree = "<group>"; };
+		182D625818C5EEC500D85934 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		182D625918C5EEC500D85934 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		182D625B18C5EEC500D85934 /* WXYSettingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYSettingManager.h; sourceTree = "<group>"; };
+		182D625C18C5EEC500D85934 /* WXYSettingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYSettingManager.m; sourceTree = "<group>"; };
+		182D625D18C5EEC500D85934 /* WXYDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYDataModel.h; sourceTree = "<group>"; };
+		182D625E18C5EEC500D85934 /* WXYDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYDataModel.m; sourceTree = "<group>"; };
+		182D626018C5EEC500D85934 /* WXYError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYError.h; sourceTree = "<group>"; };
+		182D626118C5EEC500D85934 /* WXYError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYError.m; sourceTree = "<group>"; };
+		182D626218C5EEC500D85934 /* WXYNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYNetworkEngine.h; sourceTree = "<group>"; };
+		182D626318C5EEC500D85934 /* WXYNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYNetworkEngine.m; sourceTree = "<group>"; };
+		182D626418C5EEC500D85934 /* WXYNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYNetworkOperation.h; sourceTree = "<group>"; };
+		182D626518C5EEC500D85934 /* WXYNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYNetworkOperation.m; sourceTree = "<group>"; };
+		182D626918C5EEC500D85934 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		182D626A18C5EEC500D85934 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		182D626E18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		182D626F18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		182D627018C5EEC500D85934 /* NSData+MKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MKBase64.h"; sourceTree = "<group>"; };
+		182D627118C5EEC500D85934 /* NSData+MKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MKBase64.m"; sourceTree = "<group>"; };
+		182D627218C5EEC500D85934 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		182D627318C5EEC500D85934 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		182D627418C5EEC500D85934 /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		182D627518C5EEC500D85934 /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		182D627618C5EEC500D85934 /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		182D627718C5EEC500D85934 /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		182D627818C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		182D627918C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		182D627A18C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		182D627B18C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		182D627C18C5EEC500D85934 /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		182D627D18C5EEC500D85934 /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
+		182D627E18C5EEC500D85934 /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		182D627F18C5EEC500D85934 /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		182D628018C5EEC500D85934 /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
+		182D628218C5EEC500D85934 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		182D628318C5EEC500D85934 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		182D628618C5EEC500D85934 /* MKNetworkKit-iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKNetworkKit-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		182D628718C5EEC500D85934 /* MKNetworkKit-iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "MKNetworkKit-iOS.xcodeproj"; sourceTree = "<group>"; };
+		182D62C518C5EF1600D85934 /* WXYBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYBlock.h; sourceTree = "<group>"; };
+		182D62C718C5EF5C00D85934 /* GraphicName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicName.h; sourceTree = "<group>"; };
+		182D62C918C5EF5C00D85934 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		182D62CA18C5EF5C00D85934 /* checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark@2x.png"; sourceTree = "<group>"; };
+		182D62CB18C5EF5C00D85934 /* exclamationmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exclamationmark.png; sourceTree = "<group>"; };
+		182D62CC18C5EF5C00D85934 /* exclamationmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exclamationmark@2x.png"; sourceTree = "<group>"; };
+		182D62D718C5F0DA00D85934 /* WXYRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYRootViewController.h; sourceTree = "<group>"; };
+		182D62D818C5F0DA00D85934 /* WXYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYRootViewController.m; sourceTree = "<group>"; };
+		182D62D918C5F0DA00D85934 /* WXYRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXYRootViewController.xib; sourceTree = "<group>"; };
+		182D62DE18C5F12C00D85934 /* WXYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYLoginViewController.h; sourceTree = "<group>"; };
+		182D62DF18C5F12C00D85934 /* WXYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYLoginViewController.m; sourceTree = "<group>"; };
+		182D62E018C5F12C00D85934 /* WXYLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXYLoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +222,12 @@
 		182D621618C5BC8B00D85934 /* Going */ = {
 			isa = PBXGroup;
 			children = (
+				182D62C618C5EF5C00D85934 /* graphic */,
+				182D62C418C5EF1600D85934 /* other */,
+				182D624318C5EEC500D85934 /* extension */,
+				182D624918C5EEC500D85934 /* model */,
+				182D626618C5EEC500D85934 /* thirdpart */,
+				182D623F18C5BD2200D85934 /* vc */,
 				182D621F18C5BC8B00D85934 /* WXYAppDelegate.h */,
 				182D622018C5BC8B00D85934 /* WXYAppDelegate.m */,
 				182D622218C5BC8B00D85934 /* Images.xcassets */,
@@ -142,6 +263,222 @@
 				182D623218C5BC8B00D85934 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		182D623F18C5BD2200D85934 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				182D624018C5BD2200D85934 /* login */,
+				182D624118C5BD2200D85934 /* root */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		182D624018C5BD2200D85934 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				182D62DE18C5F12C00D85934 /* WXYLoginViewController.h */,
+				182D62DF18C5F12C00D85934 /* WXYLoginViewController.m */,
+				182D62E018C5F12C00D85934 /* WXYLoginViewController.xib */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		182D624118C5BD2200D85934 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				182D62D718C5F0DA00D85934 /* WXYRootViewController.h */,
+				182D62D818C5F0DA00D85934 /* WXYRootViewController.m */,
+				182D62D918C5F0DA00D85934 /* WXYRootViewController.xib */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		182D624318C5EEC500D85934 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				182D624418C5EEC500D85934 /* NSDictionary+noNilValueForKey.h */,
+				182D624518C5EEC500D85934 /* NSDictionary+noNilValueForKey.m */,
+				182D624618C5EEC500D85934 /* UIViewController+ShowHud.h */,
+				182D624718C5EEC500D85934 /* UIViewController+ShowHud.m */,
+				182D624818C5EEC500D85934 /* WXYExtension.h */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		182D624918C5EEC500D85934 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				182D624A18C5EEC500D85934 /* data */,
+				182D625F18C5EEC500D85934 /* network */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		182D624A18C5EEC500D85934 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				182D624B18C5EEC500D85934 /* beans */,
+				182D625A18C5EEC500D85934 /* setting */,
+				182D625D18C5EEC500D85934 /* WXYDataModel.h */,
+				182D625E18C5EEC500D85934 /* WXYDataModel.m */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		182D624B18C5EEC500D85934 /* beans */ = {
+			isa = PBXGroup;
+			children = (
+				182D625818C5EEC500D85934 /* UserInfo.h */,
+				182D625918C5EEC500D85934 /* UserInfo.m */,
+			);
+			path = beans;
+			sourceTree = "<group>";
+		};
+		182D625A18C5EEC500D85934 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				182D625B18C5EEC500D85934 /* WXYSettingManager.h */,
+				182D625C18C5EEC500D85934 /* WXYSettingManager.m */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		182D625F18C5EEC500D85934 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				182D626018C5EEC500D85934 /* WXYError.h */,
+				182D626118C5EEC500D85934 /* WXYError.m */,
+				182D626218C5EEC500D85934 /* WXYNetworkEngine.h */,
+				182D626318C5EEC500D85934 /* WXYNetworkEngine.m */,
+				182D626418C5EEC500D85934 /* WXYNetworkOperation.h */,
+				182D626518C5EEC500D85934 /* WXYNetworkOperation.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		182D626618C5EEC500D85934 /* thirdpart */ = {
+			isa = PBXGroup;
+			children = (
+				182D626818C5EEC500D85934 /* MBProgressHUD */,
+				182D626B18C5EEC500D85934 /* MKNetworkKit */,
+			);
+			path = thirdpart;
+			sourceTree = "<group>";
+		};
+		182D626818C5EEC500D85934 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				182D626918C5EEC500D85934 /* MBProgressHUD.h */,
+				182D626A18C5EEC500D85934 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		182D626B18C5EEC500D85934 /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				182D626C18C5EEC500D85934 /* MKNetworkKit */,
+				182D628418C5EEC500D85934 /* MKNetworkKit-iOS */,
+			);
+			path = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		182D626C18C5EEC500D85934 /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				182D626D18C5EEC500D85934 /* Categories */,
+				182D627C18C5EEC500D85934 /* MKNetworkEngine.h */,
+				182D627D18C5EEC500D85934 /* MKNetworkEngine.m */,
+				182D627E18C5EEC500D85934 /* MKNetworkKit.h */,
+				182D627F18C5EEC500D85934 /* MKNetworkOperation.h */,
+				182D628018C5EEC500D85934 /* MKNetworkOperation.m */,
+				182D628118C5EEC500D85934 /* Reachability */,
+			);
+			path = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		182D626D18C5EEC500D85934 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				182D626E18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.h */,
+				182D626F18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.m */,
+				182D627018C5EEC500D85934 /* NSData+MKBase64.h */,
+				182D627118C5EEC500D85934 /* NSData+MKBase64.m */,
+				182D627218C5EEC500D85934 /* NSDate+RFC1123.h */,
+				182D627318C5EEC500D85934 /* NSDate+RFC1123.m */,
+				182D627418C5EEC500D85934 /* NSDictionary+RequestEncoding.h */,
+				182D627518C5EEC500D85934 /* NSDictionary+RequestEncoding.m */,
+				182D627618C5EEC500D85934 /* NSString+MKNetworkKitAdditions.h */,
+				182D627718C5EEC500D85934 /* NSString+MKNetworkKitAdditions.m */,
+				182D627818C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.h */,
+				182D627918C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.m */,
+				182D627A18C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.h */,
+				182D627B18C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		182D628118C5EEC500D85934 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				182D628218C5EEC500D85934 /* Reachability.h */,
+				182D628318C5EEC500D85934 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		182D628418C5EEC500D85934 /* MKNetworkKit-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				182D628518C5EEC500D85934 /* MKNetworkKit-iOS */,
+				182D628718C5EEC500D85934 /* MKNetworkKit-iOS.xcodeproj */,
+			);
+			path = "MKNetworkKit-iOS";
+			sourceTree = "<group>";
+		};
+		182D628518C5EEC500D85934 /* MKNetworkKit-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				182D628618C5EEC500D85934 /* MKNetworkKit-iOS-Prefix.pch */,
+			);
+			path = "MKNetworkKit-iOS";
+			sourceTree = "<group>";
+		};
+		182D628818C5EEC500D85934 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				182D62C318C5EEC500D85934 /* libMKNetworkKit-iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		182D62C418C5EF1600D85934 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				182D62C518C5EF1600D85934 /* WXYBlock.h */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		182D62C618C5EF5C00D85934 /* graphic */ = {
+			isa = PBXGroup;
+			children = (
+				182D62C718C5EF5C00D85934 /* GraphicName.h */,
+				182D62C818C5EF5C00D85934 /* hud */,
+			);
+			path = graphic;
+			sourceTree = "<group>";
+		};
+		182D62C818C5EF5C00D85934 /* hud */ = {
+			isa = PBXGroup;
+			children = (
+				182D62C918C5EF5C00D85934 /* checkmark.png */,
+				182D62CA18C5EF5C00D85934 /* checkmark@2x.png */,
+				182D62CB18C5EF5C00D85934 /* exclamationmark.png */,
+				182D62CC18C5EF5C00D85934 /* exclamationmark@2x.png */,
+			);
+			path = hud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +544,12 @@
 			mainGroup = 182D620418C5BC8B00D85934;
 			productRefGroup = 182D620E18C5BC8B00D85934 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 182D628818C5EEC500D85934 /* Products */;
+					ProjectRef = 182D628718C5EEC500D85934 /* MKNetworkKit-iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				182D620C18C5BC8B00D85934 /* Going */,
@@ -215,6 +558,16 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		182D62C318C5EEC500D85934 /* libMKNetworkKit-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMKNetworkKit-iOS.a";
+			remoteRef = 182D62C218C5EEC500D85934 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		182D620B18C5BC8B00D85934 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -222,6 +575,12 @@
 			files = (
 				182D621B18C5BC8B00D85934 /* InfoPlist.strings in Resources */,
 				182D622318C5BC8B00D85934 /* Images.xcassets in Resources */,
+				182D62CF18C5EF5C00D85934 /* checkmark@2x.png in Resources */,
+				182D62E318C5F12C00D85934 /* WXYLoginViewController.xib in Resources */,
+				182D62DC18C5F0DA00D85934 /* WXYRootViewController.xib in Resources */,
+				182D62D118C5EF5C00D85934 /* exclamationmark.png in Resources */,
+				182D62CD18C5EF5C00D85934 /* checkmark.png in Resources */,
+				182D62D318C5EF5C00D85934 /* exclamationmark@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +588,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182D62E418C5F12C00D85934 /* WXYLoginViewController.xib in Resources */,
+				182D62D418C5EF5C00D85934 /* exclamationmark@2x.png in Resources */,
+				182D62DD18C5F0DA00D85934 /* WXYRootViewController.xib in Resources */,
 				182D623418C5BC8B00D85934 /* InfoPlist.strings in Resources */,
+				182D62D018C5EF5C00D85934 /* checkmark@2x.png in Resources */,
+				182D62D218C5EF5C00D85934 /* exclamationmark.png in Resources */,
+				182D62CE18C5EF5C00D85934 /* checkmark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +605,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182D62B318C5EEC500D85934 /* NSDictionary+RequestEncoding.m in Sources */,
 				182D621D18C5BC8B00D85934 /* main.m in Sources */,
+				182D62B118C5EEC500D85934 /* NSDate+RFC1123.m in Sources */,
+				182D62A718C5EEC500D85934 /* WXYNetworkOperation.m in Sources */,
+				182D628D18C5EEC500D85934 /* NSDictionary+noNilValueForKey.m in Sources */,
+				182D62A118C5EEC500D85934 /* WXYDataModel.m in Sources */,
+				182D62AB18C5EEC500D85934 /* MBProgressHUD.m in Sources */,
+				182D62AD18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				182D62B718C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				182D62B918C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
+				182D629F18C5EEC500D85934 /* WXYSettingManager.m in Sources */,
+				182D62BD18C5EEC500D85934 /* MKNetworkOperation.m in Sources */,
+				182D62B518C5EEC500D85934 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				182D62A518C5EEC500D85934 /* WXYNetworkEngine.m in Sources */,
 				182D622118C5BC8B00D85934 /* WXYAppDelegate.m in Sources */,
+				182D629D18C5EEC500D85934 /* UserInfo.m in Sources */,
+				182D62BB18C5EEC500D85934 /* MKNetworkEngine.m in Sources */,
+				182D628F18C5EEC500D85934 /* UIViewController+ShowHud.m in Sources */,
+				182D62AF18C5EEC500D85934 /* NSData+MKBase64.m in Sources */,
+				182D62DA18C5F0DA00D85934 /* WXYRootViewController.m in Sources */,
+				182D62BF18C5EEC500D85934 /* Reachability.m in Sources */,
+				182D62E118C5F12C00D85934 /* WXYLoginViewController.m in Sources */,
+				182D62A318C5EEC500D85934 /* WXYError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +635,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182D62C018C5EEC500D85934 /* Reachability.m in Sources */,
+				182D62E218C5F12C00D85934 /* WXYLoginViewController.m in Sources */,
+				182D629018C5EEC500D85934 /* UIViewController+ShowHud.m in Sources */,
+				182D62DB18C5F0DA00D85934 /* WXYRootViewController.m in Sources */,
+				182D62A618C5EEC500D85934 /* WXYNetworkEngine.m in Sources */,
+				182D62BC18C5EEC500D85934 /* MKNetworkEngine.m in Sources */,
+				182D62A418C5EEC500D85934 /* WXYError.m in Sources */,
+				182D62B218C5EEC500D85934 /* NSDate+RFC1123.m in Sources */,
+				182D62A018C5EEC500D85934 /* WXYSettingManager.m in Sources */,
 				182D623618C5BC8B00D85934 /* GoingTests.m in Sources */,
+				182D62B618C5EEC500D85934 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				182D628E18C5EEC500D85934 /* NSDictionary+noNilValueForKey.m in Sources */,
+				182D62A818C5EEC500D85934 /* WXYNetworkOperation.m in Sources */,
+				182D62B818C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				182D62BA18C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
+				182D62B018C5EEC500D85934 /* NSData+MKBase64.m in Sources */,
+				182D62A218C5EEC500D85934 /* WXYDataModel.m in Sources */,
+				182D62B418C5EEC500D85934 /* NSDictionary+RequestEncoding.m in Sources */,
+				182D62AE18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				182D62BE18C5EEC500D85934 /* MKNetworkOperation.m in Sources */,
+				182D629E18C5EEC500D85934 /* UserInfo.m in Sources */,
+				182D62AC18C5EEC500D85934 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +767,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/apple/developer/going/project/Going/Going/thirdpart,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Going/Going-Prefix.pch";
 				INFOPLIST_FILE = "Going/Going-Info.plist";
@@ -373,6 +784,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/apple/developer/going/project/Going/Going/thirdpart,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Going/Going-Prefix.pch";
 				INFOPLIST_FILE = "Going/Going-Info.plist";
@@ -390,6 +805,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/apple/developer/going/project/Going/Going/thirdpart,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Going/Going-Prefix.pch";
@@ -413,6 +829,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/apple/developer/going/project/Going/Going/thirdpart,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Going/Going-Prefix.pch";
