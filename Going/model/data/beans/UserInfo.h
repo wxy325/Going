@@ -7,12 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-typedef NS_ENUM(NSUInteger, WXYUserType) { WXYUserTypeAdmin = 1, WXYUserTypeWorker = 2, WXYUserTypeActivityAdmin = 3 };
-@interface UserInfo : NSObject<NSCoding, NSCopying>
+#import "GenderType.h"
 
-@property (strong, nonatomic) NSString* userName;
+typedef NS_ENUM(NSUInteger, WXYUserType) { WXYUserTypeAdmin = 1, WXYUserTypeWorker = 2, WXYUserTypeActivityAdmin = 3 };
+@interface UserInfo : NSObject
+
+@property (strong, nonatomic) NSString* email;
+@property (strong, nonatomic) NSString* userId;
+@property (strong, nonatomic) NSString* name;
+@property (strong, nonatomic) NSNumber* gender;
+@property (strong, nonatomic) NSNumber* age;
+@property (strong, nonatomic) NSString* school;
+@property (strong, nonatomic) NSNumber* groupNumber;
 @property (strong, nonatomic) NSString* sessionId;
-@property (strong, nonatomic) NSNumber* roleId;
+@property (strong, nonatomic) NSNumber* vip;
+
+
 
 - (NSDictionary*)toDict;
 - (id)initWithDict:(NSDictionary*)dict;

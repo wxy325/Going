@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface WXYLoginViewController : UIViewController
+- (IBAction)loginButtonPressed:(id)sender;
+- (IBAction)sighUpButtonPressed:(id)sender;
+- (IBAction)forgetButtonPressed:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet UIImageView *usernameBackground;
+
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIImageView *passwordBackground;
 
 @end

@@ -10,23 +10,44 @@
 
 @interface WXYRootViewController ()
 
+@property (assign, nonatomic) BOOL fFirst;
+
 @end
 
 @implementation WXYRootViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+#pragma mark - Init Method
+- (id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    self = [super initWithNibName:@"WXYRootViewController" bundle:nil];
+    if (self)
+    {
+        
     }
     return self;
 }
 
+#pragma mark - Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.fFirst = YES;
+    self.navigationController.navigationBarHidden = YES;
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav_background"] forBarMetrics:UIBarMetricsDefault];
+
+}
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    if (self.fFirst)
+    {
+        self.fFirst = NO;
+        self.contentScrollView.contentSize = self.contentScrollView.frame.size;
+        self.contentScrollView.frame = self.contentView.bounds;
+        [self.contentView addSubview:self.contentScrollView];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +55,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - IBAction
 
 @end

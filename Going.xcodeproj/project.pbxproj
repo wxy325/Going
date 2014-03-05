@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181E688618C6198700B1B1EF /* WXYModuleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E688418C6198700B1B1EF /* WXYModuleListViewController.m */; };
+		181E688718C6198700B1B1EF /* WXYModuleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181E688518C6198700B1B1EF /* WXYModuleListViewController.xib */; };
+		181E688918C6284C00B1B1EF /* WXYNetworkTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E688818C6284C00B1B1EF /* WXYNetworkTest.m */; };
+		181E688C18C6286B00B1B1EF /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181E688B18C6286B00B1B1EF /* GHUnitIOS.framework */; };
+		181E689018C62F2000B1B1EF /* NSMutableDictionary+setNoNilValueForKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E688F18C62F2000B1B1EF /* NSMutableDictionary+setNoNilValueForKey.m */; };
 		182D621118C5BC8B00D85934 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182D621018C5BC8B00D85934 /* Foundation.framework */; };
 		182D621318C5BC8B00D85934 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182D621218C5BC8B00D85934 /* CoreGraphics.framework */; };
 		182D621518C5BC8B00D85934 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182D621418C5BC8B00D85934 /* UIKit.framework */; };
@@ -73,6 +78,9 @@
 		182D62E218C5F12C00D85934 /* WXYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D62DF18C5F12C00D85934 /* WXYLoginViewController.m */; };
 		182D62E318C5F12C00D85934 /* WXYLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D62E018C5F12C00D85934 /* WXYLoginViewController.xib */; };
 		182D62E418C5F12C00D85934 /* WXYLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D62E018C5F12C00D85934 /* WXYLoginViewController.xib */; };
+		189E64E218C71818001605DD /* TopicEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E64E118C71818001605DD /* TopicEntity.m */; };
+		189E64E718C71B06001605DD /* ModuleEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E64E618C71B06001605DD /* ModuleEntity.m */; };
+		189E64EA18C764E9001605DD /* TopicCommentEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E64E918C764E9001605DD /* TopicCommentEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +101,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181E688318C6198700B1B1EF /* WXYModuleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYModuleListViewController.h; sourceTree = "<group>"; };
+		181E688418C6198700B1B1EF /* WXYModuleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYModuleListViewController.m; sourceTree = "<group>"; };
+		181E688518C6198700B1B1EF /* WXYModuleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXYModuleListViewController.xib; sourceTree = "<group>"; };
+		181E688818C6284C00B1B1EF /* WXYNetworkTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYNetworkTest.m; sourceTree = "<group>"; };
+		181E688B18C6286B00B1B1EF /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
+		181E688D18C62B6200B1B1EF /* GenderType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenderType.h; sourceTree = "<group>"; };
+		181E688E18C62F2000B1B1EF /* NSMutableDictionary+setNoNilValueForKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+setNoNilValueForKey.h"; sourceTree = "<group>"; };
+		181E688F18C62F2000B1B1EF /* NSMutableDictionary+setNoNilValueForKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+setNoNilValueForKey.m"; sourceTree = "<group>"; };
 		182D620D18C5BC8B00D85934 /* Going.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Going.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182D621018C5BC8B00D85934 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		182D621218C5BC8B00D85934 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -163,6 +179,13 @@
 		182D62DE18C5F12C00D85934 /* WXYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYLoginViewController.h; sourceTree = "<group>"; };
 		182D62DF18C5F12C00D85934 /* WXYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYLoginViewController.m; sourceTree = "<group>"; };
 		182D62E018C5F12C00D85934 /* WXYLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXYLoginViewController.xib; sourceTree = "<group>"; };
+		189E64E018C71818001605DD /* TopicEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicEntity.h; sourceTree = "<group>"; };
+		189E64E118C71818001605DD /* TopicEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicEntity.m; sourceTree = "<group>"; };
+		189E64E418C719CE001605DD /* ModuleType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleType.h; sourceTree = "<group>"; };
+		189E64E518C71B06001605DD /* ModuleEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleEntity.h; sourceTree = "<group>"; };
+		189E64E618C71B06001605DD /* ModuleEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleEntity.m; sourceTree = "<group>"; };
+		189E64E818C764E9001605DD /* TopicCommentEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicCommentEntity.h; sourceTree = "<group>"; };
+		189E64E918C764E9001605DD /* TopicCommentEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicCommentEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				182D622A18C5BC8B00D85934 /* XCTest.framework in Frameworks */,
+				181E688C18C6286B00B1B1EF /* GHUnitIOS.framework in Frameworks */,
 				182D622C18C5BC8B00D85934 /* UIKit.framework in Frameworks */,
 				182D622B18C5BC8B00D85934 /* Foundation.framework in Frameworks */,
 			);
@@ -189,6 +213,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181E688218C6197700B1B1EF /* module */ = {
+			isa = PBXGroup;
+			children = (
+				181E688318C6198700B1B1EF /* WXYModuleListViewController.h */,
+				181E688418C6198700B1B1EF /* WXYModuleListViewController.m */,
+				181E688518C6198700B1B1EF /* WXYModuleListViewController.xib */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
 		182D620418C5BC8B00D85934 = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +284,7 @@
 		182D622F18C5BC8B00D85934 /* GoingTests */ = {
 			isa = PBXGroup;
 			children = (
+				181E688818C6284C00B1B1EF /* WXYNetworkTest.m */,
 				182D623518C5BC8B00D85934 /* GoingTests.m */,
 				182D623018C5BC8B00D85934 /* Supporting Files */,
 			);
@@ -268,6 +303,7 @@
 		182D623F18C5BD2200D85934 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				181E688218C6197700B1B1EF /* module */,
 				182D624018C5BD2200D85934 /* login */,
 				182D624118C5BD2200D85934 /* root */,
 			);
@@ -302,6 +338,8 @@
 				182D624618C5EEC500D85934 /* UIViewController+ShowHud.h */,
 				182D624718C5EEC500D85934 /* UIViewController+ShowHud.m */,
 				182D624818C5EEC500D85934 /* WXYExtension.h */,
+				181E688E18C62F2000B1B1EF /* NSMutableDictionary+setNoNilValueForKey.h */,
+				181E688F18C62F2000B1B1EF /* NSMutableDictionary+setNoNilValueForKey.m */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -331,6 +369,14 @@
 			children = (
 				182D625818C5EEC500D85934 /* UserInfo.h */,
 				182D625918C5EEC500D85934 /* UserInfo.m */,
+				181E688D18C62B6200B1B1EF /* GenderType.h */,
+				189E64E418C719CE001605DD /* ModuleType.h */,
+				189E64E018C71818001605DD /* TopicEntity.h */,
+				189E64E118C71818001605DD /* TopicEntity.m */,
+				189E64E518C71B06001605DD /* ModuleEntity.h */,
+				189E64E618C71B06001605DD /* ModuleEntity.m */,
+				189E64E818C764E9001605DD /* TopicCommentEntity.h */,
+				189E64E918C764E9001605DD /* TopicCommentEntity.m */,
 			);
 			path = beans;
 			sourceTree = "<group>";
@@ -360,6 +406,7 @@
 		182D626618C5EEC500D85934 /* thirdpart */ = {
 			isa = PBXGroup;
 			children = (
+				181E688B18C6286B00B1B1EF /* GHUnitIOS.framework */,
 				182D626818C5EEC500D85934 /* MBProgressHUD */,
 				182D626B18C5EEC500D85934 /* MKNetworkKit */,
 			);
@@ -575,6 +622,7 @@
 			files = (
 				182D621B18C5BC8B00D85934 /* InfoPlist.strings in Resources */,
 				182D622318C5BC8B00D85934 /* Images.xcassets in Resources */,
+				181E688718C6198700B1B1EF /* WXYModuleListViewController.xib in Resources */,
 				182D62CF18C5EF5C00D85934 /* checkmark@2x.png in Resources */,
 				182D62E318C5F12C00D85934 /* WXYLoginViewController.xib in Resources */,
 				182D62DC18C5F0DA00D85934 /* WXYRootViewController.xib in Resources */,
@@ -606,16 +654,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				182D62B318C5EEC500D85934 /* NSDictionary+RequestEncoding.m in Sources */,
+				181E688618C6198700B1B1EF /* WXYModuleListViewController.m in Sources */,
 				182D621D18C5BC8B00D85934 /* main.m in Sources */,
 				182D62B118C5EEC500D85934 /* NSDate+RFC1123.m in Sources */,
 				182D62A718C5EEC500D85934 /* WXYNetworkOperation.m in Sources */,
+				189E64E718C71B06001605DD /* ModuleEntity.m in Sources */,
 				182D628D18C5EEC500D85934 /* NSDictionary+noNilValueForKey.m in Sources */,
 				182D62A118C5EEC500D85934 /* WXYDataModel.m in Sources */,
 				182D62AB18C5EEC500D85934 /* MBProgressHUD.m in Sources */,
+				181E689018C62F2000B1B1EF /* NSMutableDictionary+setNoNilValueForKey.m in Sources */,
 				182D62AD18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
 				182D62B718C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				182D62B918C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				182D629F18C5EEC500D85934 /* WXYSettingManager.m in Sources */,
+				189E64EA18C764E9001605DD /* TopicCommentEntity.m in Sources */,
 				182D62BD18C5EEC500D85934 /* MKNetworkOperation.m in Sources */,
 				182D62B518C5EEC500D85934 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				182D62A518C5EEC500D85934 /* WXYNetworkEngine.m in Sources */,
@@ -623,6 +675,7 @@
 				182D629D18C5EEC500D85934 /* UserInfo.m in Sources */,
 				182D62BB18C5EEC500D85934 /* MKNetworkEngine.m in Sources */,
 				182D628F18C5EEC500D85934 /* UIViewController+ShowHud.m in Sources */,
+				189E64E218C71818001605DD /* TopicEntity.m in Sources */,
 				182D62AF18C5EEC500D85934 /* NSData+MKBase64.m in Sources */,
 				182D62DA18C5F0DA00D85934 /* WXYRootViewController.m in Sources */,
 				182D62BF18C5EEC500D85934 /* Reachability.m in Sources */,
@@ -656,6 +709,7 @@
 				182D62AE18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
 				182D62BE18C5EEC500D85934 /* MKNetworkOperation.m in Sources */,
 				182D629E18C5EEC500D85934 /* UserInfo.m in Sources */,
+				181E688918C6284C00B1B1EF /* WXYNetworkTest.m in Sources */,
 				182D62AC18C5EEC500D85934 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -859,6 +913,7 @@
 				182D623B18C5BC8B00D85934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		182D623C18C5BC8B00D85934 /* Build configuration list for PBXNativeTarget "GoingTests" */ = {
 			isa = XCConfigurationList;
@@ -867,6 +922,7 @@
 				182D623E18C5BC8B00D85934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

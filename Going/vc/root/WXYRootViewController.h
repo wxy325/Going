@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface WXYRootViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+
+@property (strong, nonatomic) IBOutlet UIScrollView *contentScrollView;
 
 @end

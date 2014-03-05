@@ -14,15 +14,18 @@
 
 @implementation WXYLoginViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+#pragma mark - Init Method
+- (id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    self = [super initWithNibName:@"WXYLoginViewController" bundle:nil];
+    if (self)
+    {
+        
     }
     return self;
 }
 
+#pragma mark - Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,4 +38,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - IBAction
+- (IBAction)loginButtonPressed:(id)sender {
+}
+
+- (IBAction)sighUpButtonPressed:(id)sender {
+}
+
+- (IBAction)forgetButtonPressed:(id)sender {
+}
 @end

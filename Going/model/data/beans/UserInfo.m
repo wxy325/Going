@@ -7,47 +7,24 @@
 //
 
 #import "UserInfo.h"
-
+#import "NSDictionary+noNilValueForKey.h"
+#import "NSMutableDictionary+setNoNilValueForKey.h"
 @implementation UserInfo
-
-#pragma mark -
-#pragma mark NSCoding
-- (void)encodeWithCoder:(NSCoder *)encoder
-{
-    [encoder encodeObject:self.userName forKey:@"userName"];
-    [encoder encodeObject:self.roleId forKey:@"roleId"];
-    [encoder encodeObject:self.sessionId forKey:@"sessionId"];
-
-}
-- (id)initWithCoder:(NSCoder *)decoder
-{
-    self = [super init];
-    if (self)
-    {
-        //必须与上面的encode顺序相同
-        self.userName = [decoder decodeObjectForKey:@"userName"];
-        self.roleId = [decoder decodeObjectForKey:@"roleId"];
-        self.sessionId = [decoder decodeObjectForKey:@"sessionid"];
-        
-    }
-    return self;
-}
-#pragma mark -
-#pragma mark NSCopy
-- (id)copyWithZone:(NSZone *)zone
-{
-    UserInfo* copy = [[[self class] allocWithZone:zone] init];
-    copy.userName = [self.userName copyWithZone:zone];
-    copy.roleId = [self.roleId copyWithZone:zone];
-    copy.sessionId = [self.sessionId copyWithZone:zone];
-    
-    return copy;
-}
 
 #pragma mark - Dict
 - (NSDictionary*)toDict
 {
-    NSDictionary* dict = @{@"userName":self.userName, @"roleId":self.roleId, @"sessionId":self.sessionId};
+    NSMutableDictionary* dict = [@{} mutableCopy];
+    [dict setNoNilValue:self.email forKey:@"email"];
+    [dict setNoNilValue:self.userId forKey:@"id"];
+    [dict setNoNilValue:self.name forKey:@"name"];
+    [dict setNoNilValue:self.gender forKey:@"gender"];
+    [dict setNoNilValue:self.age forKey:@"age"];
+    [dict setNoNilValue:self.school forKey:@"school"];
+    [dict setNoNilValue:self.groupNumber forKey:@"group_number"]
+;
+    [dict setNoNilValue:self.sessionId forKey:@"session_id"];
+    [dict setNoNilValue:self.vip forKey:@"vip"];
     return dict;
 }
 - (id)initWithDict:(NSDictionary*)dict
@@ -55,9 +32,15 @@
     self = [super init];
     if (self)
     {
-        self.userName = dict[@"userName"];
-        self.roleId = dict[@"roleId"];
-        self.sessionId = dict[@"sessionId"];
+        self.email = [dict noNilValueForKey:@"email"];
+        self.userId = [dict noNilValueForKey:@"id"];
+        self.name = [dict noNilValueForKey:@"name"];
+        self.gender = [dict noNilValueForKey:@"gender"];
+        self.age = [dict noNilValueForKey:@"age"];
+        self.school = [dict noNilValueForKey:@"school"];
+        self.groupNumber = [dict noNilValueForKey:@"group_number"];
+        self.sessionId = [dict noNilValueForKey:@"session_id"];
+        self.vip = [dict noNilValueForKey:@"vip"];
     }
     return self;
 }
