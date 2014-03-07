@@ -7,6 +7,7 @@
 //
 
 #import "WXYRootViewController.h"
+#import "WXYModuleListViewController.h"
 
 @interface WXYRootViewController ()
 
@@ -58,4 +59,9 @@
 
 #pragma mark - IBAction
 
+- (IBAction)moduleButtonPressed:(UIButton *)sender
+{
+    WXYModuleListViewController* vc = [[WXYModuleListViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end

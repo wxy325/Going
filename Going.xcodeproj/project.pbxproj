@@ -78,9 +78,15 @@
 		182D62E218C5F12C00D85934 /* WXYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D62DF18C5F12C00D85934 /* WXYLoginViewController.m */; };
 		182D62E318C5F12C00D85934 /* WXYLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D62E018C5F12C00D85934 /* WXYLoginViewController.xib */; };
 		182D62E418C5F12C00D85934 /* WXYLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D62E018C5F12C00D85934 /* WXYLoginViewController.xib */; };
+		188E7F9C18C8033500EDC3CD /* WXYModuleTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E7F9B18C8033500EDC3CD /* WXYModuleTopicCell.m */; };
+		188E7F9E18C8034300EDC3CD /* WXYModuleTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188E7F9D18C8034300EDC3CD /* WXYModuleTopicCell.xib */; };
 		189E64E218C71818001605DD /* TopicEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E64E118C71818001605DD /* TopicEntity.m */; };
 		189E64E718C71B06001605DD /* ModuleEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E64E618C71B06001605DD /* ModuleEntity.m */; };
 		189E64EA18C764E9001605DD /* TopicCommentEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E64E918C764E9001605DD /* TopicCommentEntity.m */; };
+		18E55B9D18C98414006947B4 /* WXYModuleNewTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E55B9C18C98414006947B4 /* WXYModuleNewTopicCell.m */; };
+		18E55BA018C98B31006947B4 /* WXYModuleNewTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E55B9F18C98B31006947B4 /* WXYModuleNewTopicCell.xib */; };
+		18E55BA618C9DC47006947B4 /* WXYModuleCommentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E55BA418C9DC47006947B4 /* WXYModuleCommentListViewController.m */; };
+		18E55BA718C9DC47006947B4 /* WXYModuleCommentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E55BA518C9DC47006947B4 /* WXYModuleCommentListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +185,9 @@
 		182D62DE18C5F12C00D85934 /* WXYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYLoginViewController.h; sourceTree = "<group>"; };
 		182D62DF18C5F12C00D85934 /* WXYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYLoginViewController.m; sourceTree = "<group>"; };
 		182D62E018C5F12C00D85934 /* WXYLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXYLoginViewController.xib; sourceTree = "<group>"; };
+		188E7F9A18C8033500EDC3CD /* WXYModuleTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYModuleTopicCell.h; sourceTree = "<group>"; };
+		188E7F9B18C8033500EDC3CD /* WXYModuleTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYModuleTopicCell.m; sourceTree = "<group>"; };
+		188E7F9D18C8034300EDC3CD /* WXYModuleTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXYModuleTopicCell.xib; sourceTree = "<group>"; };
 		189E64E018C71818001605DD /* TopicEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicEntity.h; sourceTree = "<group>"; };
 		189E64E118C71818001605DD /* TopicEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicEntity.m; sourceTree = "<group>"; };
 		189E64E418C719CE001605DD /* ModuleType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleType.h; sourceTree = "<group>"; };
@@ -186,6 +195,12 @@
 		189E64E618C71B06001605DD /* ModuleEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleEntity.m; sourceTree = "<group>"; };
 		189E64E818C764E9001605DD /* TopicCommentEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicCommentEntity.h; sourceTree = "<group>"; };
 		189E64E918C764E9001605DD /* TopicCommentEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicCommentEntity.m; sourceTree = "<group>"; };
+		18E55B9B18C98414006947B4 /* WXYModuleNewTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYModuleNewTopicCell.h; sourceTree = "<group>"; };
+		18E55B9C18C98414006947B4 /* WXYModuleNewTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYModuleNewTopicCell.m; sourceTree = "<group>"; };
+		18E55B9F18C98B31006947B4 /* WXYModuleNewTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXYModuleNewTopicCell.xib; sourceTree = "<group>"; };
+		18E55BA318C9DC47006947B4 /* WXYModuleCommentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYModuleCommentListViewController.h; sourceTree = "<group>"; };
+		18E55BA418C9DC47006947B4 /* WXYModuleCommentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYModuleCommentListViewController.m; sourceTree = "<group>"; };
+		18E55BA518C9DC47006947B4 /* WXYModuleCommentListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXYModuleCommentListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +234,9 @@
 				181E688318C6198700B1B1EF /* WXYModuleListViewController.h */,
 				181E688418C6198700B1B1EF /* WXYModuleListViewController.m */,
 				181E688518C6198700B1B1EF /* WXYModuleListViewController.xib */,
+				18E55BA318C9DC47006947B4 /* WXYModuleCommentListViewController.h */,
+				18E55BA418C9DC47006947B4 /* WXYModuleCommentListViewController.m */,
+				18E55BA518C9DC47006947B4 /* WXYModuleCommentListViewController.xib */,
 			);
 			path = module;
 			sourceTree = "<group>";
@@ -303,6 +321,7 @@
 		182D623F18C5BD2200D85934 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				188E7F9818C8032100EDC3CD /* cell */,
 				181E688218C6197700B1B1EF /* module */,
 				182D624018C5BD2200D85934 /* login */,
 				182D624118C5BD2200D85934 /* root */,
@@ -528,6 +547,19 @@
 			path = hud;
 			sourceTree = "<group>";
 		};
+		188E7F9818C8032100EDC3CD /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				188E7F9A18C8033500EDC3CD /* WXYModuleTopicCell.h */,
+				188E7F9B18C8033500EDC3CD /* WXYModuleTopicCell.m */,
+				188E7F9D18C8034300EDC3CD /* WXYModuleTopicCell.xib */,
+				18E55B9B18C98414006947B4 /* WXYModuleNewTopicCell.h */,
+				18E55B9C18C98414006947B4 /* WXYModuleNewTopicCell.m */,
+				18E55B9F18C98B31006947B4 /* WXYModuleNewTopicCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -620,14 +652,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188E7F9E18C8034300EDC3CD /* WXYModuleTopicCell.xib in Resources */,
 				182D621B18C5BC8B00D85934 /* InfoPlist.strings in Resources */,
 				182D622318C5BC8B00D85934 /* Images.xcassets in Resources */,
 				181E688718C6198700B1B1EF /* WXYModuleListViewController.xib in Resources */,
 				182D62CF18C5EF5C00D85934 /* checkmark@2x.png in Resources */,
 				182D62E318C5F12C00D85934 /* WXYLoginViewController.xib in Resources */,
 				182D62DC18C5F0DA00D85934 /* WXYRootViewController.xib in Resources */,
+				18E55BA718C9DC47006947B4 /* WXYModuleCommentListViewController.xib in Resources */,
 				182D62D118C5EF5C00D85934 /* exclamationmark.png in Resources */,
 				182D62CD18C5EF5C00D85934 /* checkmark.png in Resources */,
+				18E55BA018C98B31006947B4 /* WXYModuleNewTopicCell.xib in Resources */,
 				182D62D318C5EF5C00D85934 /* exclamationmark@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,6 +689,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				182D62B318C5EEC500D85934 /* NSDictionary+RequestEncoding.m in Sources */,
+				18E55B9D18C98414006947B4 /* WXYModuleNewTopicCell.m in Sources */,
 				181E688618C6198700B1B1EF /* WXYModuleListViewController.m in Sources */,
 				182D621D18C5BC8B00D85934 /* main.m in Sources */,
 				182D62B118C5EEC500D85934 /* NSDate+RFC1123.m in Sources */,
@@ -664,10 +700,12 @@
 				182D62AB18C5EEC500D85934 /* MBProgressHUD.m in Sources */,
 				181E689018C62F2000B1B1EF /* NSMutableDictionary+setNoNilValueForKey.m in Sources */,
 				182D62AD18C5EEC500D85934 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				18E55BA618C9DC47006947B4 /* WXYModuleCommentListViewController.m in Sources */,
 				182D62B718C5EEC500D85934 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				182D62B918C5EEC500D85934 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				182D629F18C5EEC500D85934 /* WXYSettingManager.m in Sources */,
 				189E64EA18C764E9001605DD /* TopicCommentEntity.m in Sources */,
+				188E7F9C18C8033500EDC3CD /* WXYModuleTopicCell.m in Sources */,
 				182D62BD18C5EEC500D85934 /* MKNetworkOperation.m in Sources */,
 				182D62B518C5EEC500D85934 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				182D62A518C5EEC500D85934 /* WXYNetworkEngine.m in Sources */,

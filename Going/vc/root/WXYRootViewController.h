@@ -13,4 +13,7 @@
 
 @property (strong, nonatomic) IBOutlet UIScrollView *contentScrollView;
 
+- (IBAction)moduleButtonPressed:(UIButton *)sender;
+
+
 @end

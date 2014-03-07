@@ -67,7 +67,7 @@
 
 - (void)testModuleNewTopic
 {
-    [self.engine moduleNewTopicContent:@"testContent" type:1 onSucceed:^(TopicEntity *t) {
+    [self.engine moduleNewTopicTitle:@"title" Content:@"testContent" type:1 onSucceed:^(TopicEntity *t) {
         [self.asyncTestCase notify:kGHUnitWaitStatusSuccess];
     } onError:^(NSError *error) {
         XCTFail(@"失败");

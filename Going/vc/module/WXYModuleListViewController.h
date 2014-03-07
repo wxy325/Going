@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WXYModuleTopicCell.h"
+#import "WXYModuleNewTopicCell.h"
 
-@interface WXYModuleListViewController : UIViewController
+@interface WXYModuleListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate, WXYModuleNewTopicCellDelegate, WXYModuleTopicCellDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+
+- (IBAction)backButtonPressed:(id)sender;
+- (IBAction)newButtonPressed:(id)sender;
+- (IBAction)settingButtonPressed:(id)sender;
 
 @end

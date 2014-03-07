@@ -38,7 +38,8 @@
                                onSucceed:(void (^)(ModuleEntity* m))succeedBlock
                                  onError:(ErrorBlock)errorBlock;
 //New topic
-- (MKNetworkOperation*)moduleNewTopicContent:(NSString*)content
+- (MKNetworkOperation*)moduleNewTopicTitle:(NSString*)title
+                                   Content:(NSString*)content
                                         type:(ModuleType)type
                                    onSucceed:(void (^)(TopicEntity* t))succeedBlock
                                      onError:(ErrorBlock)errorBlock;

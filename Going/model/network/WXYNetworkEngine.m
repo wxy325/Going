@@ -201,22 +201,23 @@
     return op;
 }
 
-- (MKNetworkOperation*)moduleNewTopicContent:(NSString*)content
+- (MKNetworkOperation*)moduleNewTopicTitle:(NSString*)title
+                                   Content:(NSString*)content
                                       type:(ModuleType)type
                                  onSucceed:(void (^)(TopicEntity* t))succeedBlock
-                                   onError:(ErrorBlock)errorBlock
+                                   onError:(ErrorBlock)errorBlock;
 {
     MKNetworkOperation* op = nil;
-#warning username可省略
     op = [self startOperationWithPath:URL_MODULE_NEW_TOPIC
                             needLogin:YES
-                             paramers:@{@"content":content, @"type_id":@(type), @"user_name": SHARE_SETTING_MANAGER.currentUserInfo.name}
+                             paramers:@{@"title":title, @"content":content, @"type_id":@(type), @"user_name": SHARE_SETTING_MANAGER.currentUserInfo.name}
                           onSucceeded:^(MKNetworkOperation *completedOperation)
     {
         if (succeedBlock)
         {
             NSNumber* topicId = completedOperation.responseJSON[@"id"];
             TopicEntity* t = [[TopicEntity alloc] init];
+            t.title = title;
             t.topicId = topicId;
             t.userName = SHARE_SETTING_MANAGER.currentUserInfo.name;
             t.content = content;
