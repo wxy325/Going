@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WXYModuleListViewController">
             <connections>
+                <outlet property="addButton" destination="YeH-4d-aC5" id="M7S-2p-P5v"/>
+                <outlet property="iconButton" destination="U77-pf-NTt" id="g51-on-gWj"/>
                 <outlet property="tableView" destination="g86-Ti-vd4" id="aRG-s7-IwG"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>

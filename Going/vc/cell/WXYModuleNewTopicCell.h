@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 #define WXYModuleNewTopicCellIdentifier @"WXYModuleNewTopicCellIdentifier"
-#define WXYModuleNewTopicCellHeight 125.f
+#define WXYModuleNewTopicCellHeight 175.f
 
 @protocol WXYModuleNewTopicCellDelegate <NSObject>
 
--(void)textField:(UITextField*)textField didSendContent:(NSString*)content;
+-(void)textField:(UITextField*)textField didSendContent:(NSString*)content title:(NSString*)title;
 
 @end
 
@@ -23,6 +23,9 @@
 + (WXYModuleNewTopicCell*)makeCell;
 @property (weak, nonatomic) IBOutlet UITextField *contentTextField;
 - (IBAction)editEnd:(UITextField*)sender;
+
+@property (strong, nonatomic) IBOutlet UITextField* titleTextField;
+- (IBAction)titleEditEnd:(UITextField*)sender;
 
 @property (weak, nonatomic) NSObject<WXYModuleNewTopicCellDelegate>* delegate;
 @end

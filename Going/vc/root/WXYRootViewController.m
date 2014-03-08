@@ -61,7 +61,7 @@
 
 - (IBAction)moduleButtonPressed:(UIButton *)sender
 {
-    WXYModuleListViewController* vc = [[WXYModuleListViewController alloc] init];
+    WXYModuleListViewController* vc = [[WXYModuleListViewController alloc] initWithModuleType:sender.tag];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

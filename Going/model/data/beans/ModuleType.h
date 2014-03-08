@@ -11,10 +11,14 @@
 
 typedef NS_ENUM(NSInteger, ModuleType)
 {
-    ModuleTypeLibrary = 0,
-    ModuleTypeHaveFun = 1,
-    ModuleTypeCarSharing = 2,
-    ModuleTypeSecondHandBook = 3
+
+    ModuleTypeCarSharing = 1,
+    ModuleTypeSecondHandBook = 2,
+    ModuleTypeLibrary = 3,
+    ModuleTypeHaveFun = 4
 };
+
+
+
 
 #endif

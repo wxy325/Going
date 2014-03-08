@@ -38,7 +38,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="531"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PIJ-N7-q8O">
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PIJ-N7-q8O">
                     <rect key="frame" x="39" y="87" width="111" height="101"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="LibraryButton">
@@ -48,7 +48,7 @@
                         <action selector="moduleButtonPressed:" destination="-1" eventType="touchUpInside" id="LK4-0K-tJR"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U5y-AU-oiy">
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U5y-AU-oiy">
                     <rect key="frame" x="171" y="87" width="111" height="101"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="haveFunButton">
@@ -58,7 +58,7 @@
                         <action selector="moduleButtonPressed:" destination="-1" eventType="touchUpInside" id="vok-x7-gYh"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ub7-Y1-ewu">
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ub7-Y1-ewu">
                     <rect key="frame" x="39" y="215" width="111" height="101"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="carSharing">
@@ -68,7 +68,7 @@
                         <action selector="moduleButtonPressed:" destination="-1" eventType="touchUpInside" id="HXo-MP-OYu"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mwK-Yi-n5O">
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mwK-Yi-n5O">
                     <rect key="frame" x="171" y="215" width="111" height="101"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="secondHandBook">

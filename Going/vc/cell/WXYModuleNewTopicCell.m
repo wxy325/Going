@@ -19,11 +19,12 @@
     if (array.count)
     {
         cell = array[0];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;
 }
 
-
+#pragma mark -
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
@@ -31,11 +32,15 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)titleEditEnd:(UITextField*)sender
+{
+    [self.contentTextField becomeFirstResponder];
+}
 - (IBAction)editEnd:(UITextField*)sender
 {
-    if ([self.delegate respondsToSelector:@selector(textField:didSendContent:)])
+    if ([self.delegate respondsToSelector:@selector(textField:didSendContent:title:)])
     {
-        [self.delegate textField:sender didSendContent:sender.text];
+        [self.delegate textField:sender didSendContent:sender.text title:self.titleTextField.text];
     }
 }
 @end

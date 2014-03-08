@@ -64,14 +64,14 @@
 #pragma mark - IBAction
 - (IBAction)commentButtonPressed:(id)sender
 {
-    if ([self.delegate respondsToSelector:@selector(commentButtonPressed:)])
+    if ([self.delegate respondsToSelector:@selector(commentButtonPressedCell:)])
     {
         [self.delegate commentButtonPressedCell:self];
     }
 }
 - (IBAction)zanButtonPressed:(id)sender
 {
-    if ([self.delegate respondsToSelector:@selector(zanButtonPressed:)])
+    if ([self.delegate respondsToSelector:@selector(zanButtonPressedCell:)])
     {
         [self.delegate zanButtonPressedCell:self];
     }
@@ -92,13 +92,21 @@
     
     self.titleLabel.text = t.title;
     self.contentTextView.text = t.content;
+    
     self.dateAndNameLabel.text = [NSString stringWithFormat:@"%@ %@",t.timeStr, t.userName];
+    
+    
     float height = [WXYModuleTopicCell getCellHeightWithTopicEntity:t type:type];
 
     [self updateButtonHigh:self.zanButton byCellHeight:height];
     [self updateButtonHigh:self.zanNumberLabel byCellHeight:height];
     [self updateButtonHigh:self.commentButton byCellHeight:height];
     [self updateButtonHigh:self.commentNumberLabel byCellHeight:height];
+    
+    
+    CGRect rect = self.contentTextView.frame;
+    rect.size.height = height;
+    self.contentTextView.frame = rect;
     
 }
 

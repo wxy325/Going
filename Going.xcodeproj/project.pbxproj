@@ -87,6 +87,10 @@
 		18E55BA018C98B31006947B4 /* WXYModuleNewTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E55B9F18C98B31006947B4 /* WXYModuleNewTopicCell.xib */; };
 		18E55BA618C9DC47006947B4 /* WXYModuleCommentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E55BA418C9DC47006947B4 /* WXYModuleCommentListViewController.m */; };
 		18E55BA718C9DC47006947B4 /* WXYModuleCommentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E55BA518C9DC47006947B4 /* WXYModuleCommentListViewController.xib */; };
+		18E55BAB18C9E05D006947B4 /* WXYModuleAddCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E55BAA18C9E05D006947B4 /* WXYModuleAddCommentCell.m */; };
+		18E55BAD18C9E069006947B4 /* WXYModuleAddCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E55BAC18C9E069006947B4 /* WXYModuleAddCommentCell.xib */; };
+		18E55BB018C9E077006947B4 /* WXYModuleCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E55BAF18C9E077006947B4 /* WXYModuleCommentCell.m */; };
+		18E55BB218C9E07F006947B4 /* WXYModuleCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E55BB118C9E07F006947B4 /* WXYModuleCommentCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +205,12 @@
 		18E55BA318C9DC47006947B4 /* WXYModuleCommentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYModuleCommentListViewController.h; sourceTree = "<group>"; };
 		18E55BA418C9DC47006947B4 /* WXYModuleCommentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYModuleCommentListViewController.m; sourceTree = "<group>"; };
 		18E55BA518C9DC47006947B4 /* WXYModuleCommentListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXYModuleCommentListViewController.xib; sourceTree = "<group>"; };
+		18E55BA918C9E05D006947B4 /* WXYModuleAddCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYModuleAddCommentCell.h; sourceTree = "<group>"; };
+		18E55BAA18C9E05D006947B4 /* WXYModuleAddCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYModuleAddCommentCell.m; sourceTree = "<group>"; };
+		18E55BAC18C9E069006947B4 /* WXYModuleAddCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXYModuleAddCommentCell.xib; sourceTree = "<group>"; };
+		18E55BAE18C9E077006947B4 /* WXYModuleCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYModuleCommentCell.h; sourceTree = "<group>"; };
+		18E55BAF18C9E077006947B4 /* WXYModuleCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYModuleCommentCell.m; sourceTree = "<group>"; };
+		18E55BB118C9E07F006947B4 /* WXYModuleCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXYModuleCommentCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -556,6 +566,12 @@
 				18E55B9B18C98414006947B4 /* WXYModuleNewTopicCell.h */,
 				18E55B9C18C98414006947B4 /* WXYModuleNewTopicCell.m */,
 				18E55B9F18C98B31006947B4 /* WXYModuleNewTopicCell.xib */,
+				18E55BA918C9E05D006947B4 /* WXYModuleAddCommentCell.h */,
+				18E55BAA18C9E05D006947B4 /* WXYModuleAddCommentCell.m */,
+				18E55BAC18C9E069006947B4 /* WXYModuleAddCommentCell.xib */,
+				18E55BAE18C9E077006947B4 /* WXYModuleCommentCell.h */,
+				18E55BAF18C9E077006947B4 /* WXYModuleCommentCell.m */,
+				18E55BB118C9E07F006947B4 /* WXYModuleCommentCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -657,8 +673,10 @@
 				182D622318C5BC8B00D85934 /* Images.xcassets in Resources */,
 				181E688718C6198700B1B1EF /* WXYModuleListViewController.xib in Resources */,
 				182D62CF18C5EF5C00D85934 /* checkmark@2x.png in Resources */,
+				18E55BAD18C9E069006947B4 /* WXYModuleAddCommentCell.xib in Resources */,
 				182D62E318C5F12C00D85934 /* WXYLoginViewController.xib in Resources */,
 				182D62DC18C5F0DA00D85934 /* WXYRootViewController.xib in Resources */,
+				18E55BB218C9E07F006947B4 /* WXYModuleCommentCell.xib in Resources */,
 				18E55BA718C9DC47006947B4 /* WXYModuleCommentListViewController.xib in Resources */,
 				182D62D118C5EF5C00D85934 /* exclamationmark.png in Resources */,
 				182D62CD18C5EF5C00D85934 /* checkmark.png in Resources */,
@@ -706,6 +724,7 @@
 				182D629F18C5EEC500D85934 /* WXYSettingManager.m in Sources */,
 				189E64EA18C764E9001605DD /* TopicCommentEntity.m in Sources */,
 				188E7F9C18C8033500EDC3CD /* WXYModuleTopicCell.m in Sources */,
+				18E55BB018C9E077006947B4 /* WXYModuleCommentCell.m in Sources */,
 				182D62BD18C5EEC500D85934 /* MKNetworkOperation.m in Sources */,
 				182D62B518C5EEC500D85934 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				182D62A518C5EEC500D85934 /* WXYNetworkEngine.m in Sources */,
@@ -718,6 +737,7 @@
 				182D62DA18C5F0DA00D85934 /* WXYRootViewController.m in Sources */,
 				182D62BF18C5EEC500D85934 /* Reachability.m in Sources */,
 				182D62E118C5F12C00D85934 /* WXYLoginViewController.m in Sources */,
+				18E55BAB18C9E05D006947B4 /* WXYModuleAddCommentCell.m in Sources */,
 				182D62A318C5EEC500D85934 /* WXYError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

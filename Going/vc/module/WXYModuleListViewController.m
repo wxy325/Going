@@ -13,6 +13,8 @@
 #import "UIViewController+ShowHud.h"
 #import "MBProgressHUD.h"
 
+#import "WXYModuleCommentListViewController.h"
+
 @interface WXYModuleTopicListViewCellState : NSObject
 
 @property (assign, nonatomic) WXYModuleTopicCellType subtype;
@@ -42,6 +44,8 @@
 @property (strong, nonatomic) WXYModuleNewTopicCell* newTopicCell;
 @property (strong, nonatomic) UIView* divider;
 @property (strong, nonatomic) UIView* zeroView;
+
+@property (assign, nonatomic) ModuleType moduleType;
 @end
 
 @implementation WXYModuleListViewController
@@ -73,7 +77,7 @@
 }
 
 #pragma mark - Init
-- (id)init
+- (id)initWithModuleType:(ModuleType)type
 {
     self = [super initWithNibName:@"WXYModuleListViewController" bundle:nil];
     if (self)
@@ -82,6 +86,8 @@
         self.stateArray = [@[] mutableCopy];
         
         self.fShowNewCell = NO;
+        
+        self.moduleType = type;
         
     }
     return self;
@@ -92,8 +98,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.iconButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"icon" withModuleType:self.moduleType]] forState:UIControlStateNormal];
+    [self.addButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"add" withModuleType:self.moduleType]] forState:UIControlStateNormal];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     MBProgressHUD* hud = [self showNetworkWaitingHud];
-    [SHARE_NW_ENGINE getModuleTopicList:1
+    [SHARE_NW_ENGINE getModuleTopicList:self.moduleType
                                    page:@1
                               onSucceed:^(NSArray *resultArray)
      {
@@ -242,30 +256,17 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     [self.newTopicCell.contentTextField resignFirstResponder];
+    [self.newTopicCell.titleTextField resignFirstResponder];
 }
 
 #pragma mark - WXYModuleNewTopicCellDelegate
 
--(void)textField:(UITextField*)textField didSendContent:(NSString*)content
+-(void)textField:(UITextField*)textField didSendContent:(NSString*)content title:(NSString *)title
 {
-    NSRange range = [content rangeOfString:@"。"];
-    if (range.location == NSNotFound)
-    {
-        range = [content rangeOfString:@"."];
-    }
     
-    NSString* title = nil;
-    NSString* con = nil;
-    if (range.location == NSNotFound)
-    {
-        title = content;
-        con = @"";
-    }
-    else
-    {
-        title = [content substringToIndex:range.location];
-        con = [content substringFromIndex:range.location + 1];
-    }
+
+    NSString* con = content;
+
     
     MBProgressHUD* hud = [self showNetworkWaitingHud];
     
@@ -290,7 +291,10 @@
 #pragma mark - WXYModuleTopicCellDelegate
 - (void)commentButtonPressedCell:(UITableViewCell*)cell
 {
-    
+    NSIndexPath* indexPath = [self.tableView indexPathForCell:cell];
+    TopicEntity* t = self.datasourceArray[indexPath.row];
+    WXYModuleCommentListViewController* vc = [[WXYModuleCommentListViewController alloc] initWithTopicEntity:t];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)zanButtonPressedCell:(UITableViewCell*)cell
 {

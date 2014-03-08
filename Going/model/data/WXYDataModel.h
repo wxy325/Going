@@ -18,8 +18,13 @@
 
 #import <Foundation/Foundation.h>
 
-
+#define SHARE_DM [WXYDataModel shareDataModel]
 
 @interface WXYDataModel : NSObject
+
++ (WXYDataModel*)shareDataModel;
+
+@property (strong, nonatomic) NSArray* moduleTypeResourcePrefix;
+- (NSString*)getResourceName:(NSString*)name withModuleType:(ModuleType)type;
 
 @end

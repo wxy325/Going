@@ -47,7 +47,7 @@
 
 - (void)testUserLogin
 {
-    [self.engine loginWithEmail:@"a@aa.com" password:@"123123" onSucceed:^{
+    [self.engine loginWithEmail:@"testt@test.com" password:@"testtest" onSucceed:^{
         [self.asyncTestCase notify:kGHUnitWaitStatusSuccess];
     } onError:^(NSError *error) {
         [self.asyncTestCase notify:kGHUnitWaitStatusFailure];

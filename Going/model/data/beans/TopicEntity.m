@@ -21,7 +21,7 @@
         self.title = [dict noNilValueForKey:@"title"];
         self.timeStr = [dict noNilValueForKey:@"time"];
 #warning time未处理
-        self.topicId = [dict noNilValueForKey:@"type_id"];
+        self.moduleType = [dict noNilValueForKey:@"type_id"];
     }
     return self;
 }
