@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ModuleType.h"
 #define WXYModuleNewTopicCellIdentifier @"WXYModuleNewTopicCellIdentifier"
 #define WXYModuleNewTopicCellHeight 175.f
 
@@ -20,7 +20,7 @@
 @interface WXYModuleNewTopicCell : UITableViewCell
 
 #pragma mark - Static Method
-+ (WXYModuleNewTopicCell*)makeCell;
++ (WXYModuleNewTopicCell*)makeCellWithType:(ModuleType)type;;
 @property (weak, nonatomic) IBOutlet UITextField *contentTextField;
 - (IBAction)editEnd:(UITextField*)sender;
 

@@ -11,9 +11,10 @@
 
 #import "WXYModuleTopicCell.h"
 #import "TopicEntity.h"
+#import "WXYDataModel.h"
 
 @interface WXYModuleTopicCell ()
-
+@property (assign, nonatomic) ModuleType moduleType;
 @property (assign, nonatomic) WXYModuleTopicCellType type;
 - (void)updateButtonHigh:(UIView*)v byCellHeight:(float)height;
 
@@ -23,7 +24,7 @@
 
 
 #pragma mark - Static Method
-+ (WXYModuleTopicCell*)makeCell
++ (WXYModuleTopicCell*)makeCellWithType:(ModuleType)type;
 {
     UINib* nib = [UINib nibWithNibName:@"WXYModuleTopicCell" bundle:[NSBundle mainBundle]];
     NSArray* array = [nib instantiateWithOwner:self options:nil];
@@ -32,6 +33,16 @@
     {
         cell = array[0];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.moduleType = type;
+        
+        [cell.commentButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"comment_normal" withModuleType:cell.moduleType]] forState:UIControlStateNormal];
+        [cell.commentButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"comment_hover" withModuleType:cell.moduleType]] forState:UIControlStateHighlighted];
+        [cell.commentButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"comment_hover" withModuleType:cell.moduleType]] forState:UIControlStateSelected];
+        
+        
+        [cell.zanButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"zan" withModuleType:cell.moduleType]] forState:UIControlStateNormal];
+        [cell.zanButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"zan_hover" withModuleType:cell.moduleType]] forState:UIControlStateHighlighted];
+        [cell.zanButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"zan_hover" withModuleType:cell.moduleType]] forState:UIControlStateSelected];
     }
     return cell;
 }

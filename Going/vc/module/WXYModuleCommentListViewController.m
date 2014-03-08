@@ -21,6 +21,7 @@
 @property (strong, nonatomic) WXYModuleAddCommentCell* addCommentCell;
 @property (strong, nonatomic) UIView* divider;
 @property (strong, nonatomic) UIView* zeroView;
+@property (assign, nonatomic) ModuleType moduleType;
 @end
 
 @implementation WXYModuleCommentListViewController
@@ -46,7 +47,7 @@
 {
     if (!_newTopicCell)
     {
-        _newTopicCell = [WXYModuleNewTopicCell makeCell];
+        _newTopicCell = [WXYModuleNewTopicCell makeCellWithType:self.moduleType];
         _newTopicCell.delegate = self;
     }
     return _newTopicCell;
@@ -55,20 +56,21 @@
 {
     if (!_addCommentCell)
     {
-        _addCommentCell = [WXYModuleAddCommentCell makeCell];
+        _addCommentCell = [WXYModuleAddCommentCell makeCellWithType:self.moduleType];
         _addCommentCell.delegate = self;
     }
     return _addCommentCell;
 }
 
 #pragma mark - Init
-- (id)initWithTopicEntity:(TopicEntity*)t
+- (id)initWithTopicEntity:(TopicEntity*)t type:(ModuleType)type;
 {
     self = [super initWithNibName:@"WXYModuleCommentListViewController" bundle:nil];
     if (self)
     {
         self.topicEntity = t;
         self.datasourceArray = [@[] mutableCopy];
+        self.moduleType = type;
     }
     return self;
 }
@@ -128,7 +130,7 @@
             WXYModuleTopicCell* cell = (WXYModuleTopicCell*)[tableView dequeueReusableCellWithIdentifier:ModuleTopicCellIdentifier];
             if (!cell)
             {
-                cell = [WXYModuleTopicCell makeCell];
+                cell = [WXYModuleTopicCell makeCellWithType:self.moduleType];
                 cell.delegate = self;
             }
             [cell bindWithTopicEntity:self.topicEntity type:WXYModuleTopicCellTypeDetail];
@@ -144,7 +146,7 @@
             WXYModuleCommentCell* cell = (WXYModuleCommentCell*)[tableView dequeueReusableCellWithIdentifier:WXYModuleCommentCellIdentifier];
             if (!cell)
             {
-                cell = [WXYModuleCommentCell makeCell];
+                cell = [WXYModuleCommentCell makeCellWithType:self.moduleType];
             }
             [cell bindWithCommentEntity:c];
             return cell;

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ModuleType.h"
 #define WXYModuleAddCommentCellHeight 51.f
 
 @protocol WXYModuleAddCommentCellDelegate <NSObject>
@@ -18,7 +18,7 @@
 
 @interface WXYModuleAddCommentCell : UITableViewCell
 
-+ (WXYModuleAddCommentCell*)makeCell;
++ (WXYModuleAddCommentCell*)makeCellWithType:(ModuleType)type;;
 
 
 @property (strong, nonatomic) IBOutlet UITextField* commentTextField;

@@ -62,7 +62,7 @@
     if (!_divider)
     {
         _divider = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 6)];
-        _divider.backgroundColor = [UIColor colorWithRed:102.f/255.f green:204.f/255.f blue:1.f alpha:1.f];
+        _divider.backgroundColor = SHARE_DM.moduleTypeColor[self.moduleType];
     }
     return _divider;
 }
@@ -70,7 +70,7 @@
 {
     if (!_newTopicCell)
     {
-        _newTopicCell = [WXYModuleNewTopicCell makeCell];
+        _newTopicCell = [WXYModuleNewTopicCell makeCellWithType:self.moduleType];
         _newTopicCell.delegate = self;
     }
     return _newTopicCell;
@@ -100,6 +100,7 @@
     // Do any additional setup after loading the view from its nib.
     [self.iconButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"icon" withModuleType:self.moduleType]] forState:UIControlStateNormal];
     [self.addButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"add" withModuleType:self.moduleType]] forState:UIControlStateNormal];
+    self.titleLabel.text = SHARE_DM.moduleTypeTitle[self.moduleType];
     
 }
 
@@ -156,7 +157,7 @@
         WXYModuleTopicCell* cell = (WXYModuleTopicCell*)[tableView dequeueReusableCellWithIdentifier:ModuleTopicCellIdentifier];
         if (!cell)
         {
-            cell = [WXYModuleTopicCell makeCell];
+            cell = [WXYModuleTopicCell makeCellWithType:self.moduleType];
             cell.delegate = self;
         }
         TopicEntity* e = self.datasourceArray[indexPath.row];
@@ -293,7 +294,7 @@
 {
     NSIndexPath* indexPath = [self.tableView indexPathForCell:cell];
     TopicEntity* t = self.datasourceArray[indexPath.row];
-    WXYModuleCommentListViewController* vc = [[WXYModuleCommentListViewController alloc] initWithTopicEntity:t];
+    WXYModuleCommentListViewController* vc = [[WXYModuleCommentListViewController alloc] initWithTopicEntity:t type:self.moduleType];
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)zanButtonPressedCell:(UITableViewCell*)cell

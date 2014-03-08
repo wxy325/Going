@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *iconButton;
 @property (weak, nonatomic) IBOutlet UIButton *addButton;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 - (IBAction)backButtonPressed:(id)sender;
 - (IBAction)newButtonPressed:(id)sender;

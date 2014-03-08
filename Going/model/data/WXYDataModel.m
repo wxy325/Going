@@ -14,13 +14,35 @@
 @end
 
 @implementation WXYDataModel
+- (NSArray*)moduleTypeTitle
+{
+    if (!_moduleTypeTitle)
+    {
+        _moduleTypeTitle = @[@"",@"拼车 Car sharing",@"二手书 Second-hand book",@"图书馆 Library",@"一起玩 Have fun"];
+    }
+    return _moduleTypeTitle;
+}
+
+- (NSArray*)moduleTypeColor
+{
+    if (!_moduleTypeColor)
+    {
+        _moduleTypeColor = @[[UIColor whiteColor],
+                             [UIColor colorWithRed:244/255.f green:230/255.f blue:1/255.f alpha:1.f],
+                             [UIColor colorWithRed:102/255.f green:203/255.f blue:255/255.f alpha:1.f],
+                             [UIColor colorWithRed:52/255.f green:204/255.f blue:153/255.f alpha:1.f],
+                             [UIColor colorWithRed:254/255.f green:100/255.f blue:100/255.f alpha:1.f]
+                             ];
+    }
+    return _moduleTypeColor;
+}
 
 - (NSArray*)moduleTypeResourcePrefix
 {
     
     if (!_moduleTypeResourcePrefix)
     {
-        _moduleTypeResourcePrefix  =@[@"",@"library_",@"second_hand_", @"share_car_",@"yiqiwan_"];
+        _moduleTypeResourcePrefix  =@[@"",@"share_car_",@"second_hand_", @"library_",@"yiqiwan_"];
     }
     return _moduleTypeResourcePrefix;
 }

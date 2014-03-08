@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ModuleType.h"
 
 #define WXYModuleCommentCellIdentifier @"WXYModuleCommentCellIdentifier"
 
@@ -21,7 +22,7 @@
 
 - (void)bindWithCommentEntity:(TopicCommentEntity*)c;
 
-+ (WXYModuleCommentCell*)makeCell;
++ (WXYModuleCommentCell*)makeCellWithType:(ModuleType)type;
 
 + (float)getCellHeightWithCommentEntity:(TopicCommentEntity*)c;
 

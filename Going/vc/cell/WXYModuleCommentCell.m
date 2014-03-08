@@ -9,11 +9,16 @@
 #import "WXYModuleCommentCell.h"
 #import "WXYNetworkEngine.h"
 
+@interface WXYModuleCommentCell ()
+
+@property (assign, nonatomic) ModuleType moduleType;
+
+@end
 
 @implementation WXYModuleCommentCell
 
 #pragma mark - Static Method
-+ (WXYModuleCommentCell*)makeCell
++ (WXYModuleCommentCell*)makeCellWithType:(ModuleType)type
 {
     UINib* nib = [UINib nibWithNibName:@"WXYModuleCommentCell" bundle:[NSBundle mainBundle]];
     NSArray* array = [nib instantiateWithOwner:self options:nil];
@@ -21,6 +26,7 @@
     if (array.count)
     {
         cell = array[0];
+        cell.moduleType = type;
     }
     return cell;
 }

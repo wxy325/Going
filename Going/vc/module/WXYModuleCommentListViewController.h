@@ -25,6 +25,6 @@
 - (IBAction)newButtonPressed:(id)sender;
 - (IBAction)settingButtonPressed:(id)sender;
 
-- (id)initWithTopicEntity:(TopicEntity*)t;
+- (id)initWithTopicEntity:(TopicEntity*)t type:(ModuleType)type;
 
 @end

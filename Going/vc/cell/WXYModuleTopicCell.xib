@@ -24,16 +24,6 @@
                         <rect key="frame" x="10" y="14" width="45" height="49"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RXy-H8-YlB">
-                        <rect key="frame" x="264" y="78" width="15" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" image="second_hand_zan">
-                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                        <connections>
-                            <action selector="zanButtonPressed:" destination="b9R-E9-pZz" eventType="touchUpInside" id="ST2-Uh-W0Y"/>
-                        </connections>
-                    </button>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="euL-fH-S3P">
                         <rect key="frame" x="287" y="78" width="20" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -44,7 +34,7 @@
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bce-qU-csN">
                         <rect key="frame" x="214" y="78" width="14" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" image="second_hand-comment_normal">
+                        <state key="normal" image="second_hand_comment_hover">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                         <connections>
@@ -70,6 +60,16 @@
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JEg-aJ-CDP">
+                        <rect key="frame" x="265" y="78" width="14" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="second_hand_comment_hover">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="commentButtonPressed:" destination="b9R-E9-pZz" eventType="touchUpInside" id="PKr-VD-CTV"/>
+                        </connections>
+                    </button>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -79,14 +79,13 @@
                 <outlet property="dateAndNameLabel" destination="wxS-Mk-0Et" id="SHC-9A-qh8"/>
                 <outlet property="headPhotoImageView" destination="2Rk-zv-X1h" id="HR7-Lh-hCQ"/>
                 <outlet property="titleLabel" destination="QgB-7q-eGu" id="ZPO-2c-8Oe"/>
-                <outlet property="zanButton" destination="RXy-H8-YlB" id="0Vo-BC-TOc"/>
+                <outlet property="zanButton" destination="JEg-aJ-CDP" id="Qiw-Wa-cd3"/>
                 <outlet property="zanNumberLabel" destination="euL-fH-S3P" id="rX8-nH-wia"/>
             </connections>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="second_hand-comment_normal" width="14" height="17"/>
+        <image name="second_hand_comment_hover" width="14" height="17"/>
         <image name="second_hand_userHead_big" width="45" height="45"/>
-        <image name="second_hand_zan" width="15" height="15"/>
     </resources>
 </document>

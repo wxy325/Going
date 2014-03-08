@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ModuleType.h"
 #define ModuleTopicCellIdentifier @"ModuleTopicCellIdentifier"
 
 @class TopicEntity;
@@ -33,6 +33,7 @@ typedef NS_ENUM(NSInteger, WXYModuleTopicCellType)
 @property (strong, nonatomic) IBOutlet UILabel* dateAndNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel* zanNumberLabel;
 @property (strong, nonatomic) IBOutlet UILabel* commentNumberLabel;
+
 @property (strong, nonatomic) IBOutlet UIButton* commentButton;
 @property (strong, nonatomic) IBOutlet UIButton* zanButton;
 
@@ -43,7 +44,8 @@ typedef NS_ENUM(NSInteger, WXYModuleTopicCellType)
 - (IBAction)zanButtonPressed:(id)sender;
 
 #pragma mark - Static Method
-+ (WXYModuleTopicCell*)makeCell;
++ (WXYModuleTopicCell*)makeCellWithType:(ModuleType)type;
+
 + (float)getCellHeightWithTopicEntity:(TopicEntity*)t type:(WXYModuleTopicCellType)type;
 #pragma mark -
 @property (weak, nonatomic) NSObject<WXYModuleTopicCellDelegate>* delegate;

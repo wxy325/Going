@@ -8,10 +8,15 @@
 
 #import "WXYModuleNewTopicCell.h"
 
+@interface WXYModuleNewTopicCell ()
+
+@property (assign, nonatomic) ModuleType moduleType;
+@end
+
 @implementation WXYModuleNewTopicCell
 
 #pragma mark - Static Method
-+ (WXYModuleNewTopicCell*)makeCell
++ (WXYModuleNewTopicCell*)makeCellWithType:(ModuleType)type
 {
     UINib* nib = [UINib nibWithNibName:@"WXYModuleNewTopicCell" bundle:[NSBundle mainBundle]];
     NSArray* array = [nib instantiateWithOwner:self options:nil];
@@ -20,6 +25,7 @@
     {
         cell = array[0];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.moduleType = type;
     }
     return cell;
 }

@@ -25,6 +25,9 @@
 + (WXYDataModel*)shareDataModel;
 
 @property (strong, nonatomic) NSArray* moduleTypeResourcePrefix;
+@property (strong, nonatomic) NSArray* moduleTypeTitle;
+@property (strong, nonatomic) NSArray* moduleTypeColor;
+
 - (NSString*)getResourceName:(NSString*)name withModuleType:(ModuleType)type;
 
 @end

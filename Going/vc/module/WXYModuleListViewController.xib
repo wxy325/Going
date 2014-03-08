@@ -9,6 +9,7 @@
                 <outlet property="addButton" destination="YeH-4d-aC5" id="M7S-2p-P5v"/>
                 <outlet property="iconButton" destination="U77-pf-NTt" id="g51-on-gWj"/>
                 <outlet property="tableView" destination="g86-Ti-vd4" id="aRG-s7-IwG"/>
+                <outlet property="titleLabel" destination="Fco-sj-Y51" id="Ueg-tC-owl"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -42,7 +43,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="二手书 Second-hand book" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fco-sj-Y51">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="二手书 Second-hand book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fco-sj-Y51">
                     <rect key="frame" x="96" y="31" width="170" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
