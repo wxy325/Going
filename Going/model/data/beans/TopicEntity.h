@@ -18,7 +18,11 @@
 @property (strong, nonatomic) NSString* title;
 @property (strong, nonatomic) NSString* userId;
 @property (strong, nonatomic) NSDate* time;
-@property (strong, nonatomic) NSString* timeStr;
+
+@property (strong, nonatomic) NSNumber* good;
+@property (strong, nonatomic) NSNumber* gooded;
+@property (strong, nonatomic) NSNumber* comment;
+
 
 - (id)initWithDict:(NSDictionary*)dict;
 

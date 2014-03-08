@@ -9,6 +9,7 @@
                 <outlet property="addButton" destination="uij-Bw-jEQ" id="fqg-ah-BMv"/>
                 <outlet property="iconButton" destination="hPd-VD-zhA" id="7TY-4d-77E"/>
                 <outlet property="tableView" destination="jbv-Sg-90M" id="taL-rX-Yba"/>
+                <outlet property="titleLabel" destination="JBD-Tt-gAw" id="5K8-Pb-sCv"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -60,11 +61,11 @@
                     <rect key="frame" x="17" y="68" width="27" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" backgroundImage="AF8BBAC1-98DC-404A-B507-B16BC9F02FC9">
+                    <state key="normal" backgroundImage="5F8CCF20-DF30-45F7-966A-EDCC2E66022D">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="二手书 Second-hand book" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JBD-Tt-gAw">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="二手书 Second-hand book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JBD-Tt-gAw">
                     <rect key="frame" x="96" y="31" width="170" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -89,7 +90,7 @@
         </view>
     </objects>
     <resources>
-        <image name="AF8BBAC1-98DC-404A-B507-B16BC9F02FC9" width="27" height="30">
+        <image name="5F8CCF20-DF30-45F7-966A-EDCC2E66022D" width="27" height="30">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISksLzU4VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA

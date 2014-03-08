@@ -29,6 +29,7 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="commentBackground" destination="Q49-ay-m8H" id="XNl-ao-PFA"/>
                 <outlet property="commentTextField" destination="bpn-Zi-sxE" id="e2D-zf-qVt"/>
             </connections>
         </tableViewCell>

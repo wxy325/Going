@@ -43,6 +43,11 @@
         [cell.zanButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"zan" withModuleType:cell.moduleType]] forState:UIControlStateNormal];
         [cell.zanButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"zan_hover" withModuleType:cell.moduleType]] forState:UIControlStateHighlighted];
         [cell.zanButton setImage:[UIImage imageNamed:[SHARE_DM getResourceName:@"zan_hover" withModuleType:cell.moduleType]] forState:UIControlStateSelected];
+        
+        cell.dateAndNameLabel.textColor = SHARE_DM.moduleTypeColor[cell.moduleType];
+        
+        cell.commentNumberLabel.textColor = SHARE_DM.moduleTypeColor[cell.moduleType];
+        cell.zanNumberLabel.textColor = SHARE_DM.moduleTypeColor[cell.moduleType];
     }
     return cell;
 }
@@ -104,7 +109,10 @@
     self.titleLabel.text = t.title;
     self.contentTextView.text = t.content;
     
-    self.dateAndNameLabel.text = [NSString stringWithFormat:@"%@ %@",t.timeStr, t.userName];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy.MM.dd"];
+
+    self.dateAndNameLabel.text = [NSString stringWithFormat:@"%@ %@",[dateFormatter stringFromDate:t.time], t.userName];
     
     
     float height = [WXYModuleTopicCell getCellHeightWithTopicEntity:t type:type];
@@ -118,6 +126,10 @@
     CGRect rect = self.contentTextView.frame;
     rect.size.height = height;
     self.contentTextView.frame = rect;
+    
+    self.zanNumberLabel.text = t.good.stringValue;
+    self.commentNumberLabel.text = t.comment.stringValue;
+    self.zanButton.selected = t.gooded.boolValue;
     
 }
 

@@ -16,7 +16,7 @@
 @property (strong, nonatomic) NSNumber* userId;
 @property (strong, nonatomic) NSString* content;
 @property (strong, nonatomic) NSDate* time;
-@property (strong, nonatomic) NSNumber* timeStr;
+//@property (strong, nonatomic) NSNumber* timeStr;
 
 - (id)initWithDict:(NSDictionary*)dict;
 

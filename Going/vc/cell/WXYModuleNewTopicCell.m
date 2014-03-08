@@ -7,6 +7,8 @@
 //
 
 #import "WXYModuleNewTopicCell.h"
+#import "WXYDataModel.h"
+
 
 @interface WXYModuleNewTopicCell ()
 
@@ -26,6 +28,11 @@
         cell = array[0];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.moduleType = type;
+        
+        cell.buttonBackground.image = [UIImage imageNamed:[SHARE_DM getResourceName:@"new_cell" withModuleType:cell.moduleType]];
+        cell.titleBackground.image = [UIImage imageNamed:[SHARE_DM getResourceName:@"title_background" withModuleType:cell.moduleType]];
+        cell.contentBackground.image = [UIImage imageNamed:[SHARE_DM getResourceName:@"comment_background" withModuleType:cell.moduleType]];
+        
     }
     return cell;
 }

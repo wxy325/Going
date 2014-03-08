@@ -7,6 +7,7 @@
 //
 
 #import "WXYModuleAddCommentCell.h"
+#import "WXYDataModel.h"
 
 @interface WXYModuleAddCommentCell ()
 
@@ -26,6 +27,7 @@
     {
         cell = array[0];
         cell.moduleType = type;
+        cell.commentBackground.image = [UIImage imageNamed:[SHARE_DM getResourceName:@"comment_background" withModuleType:cell.moduleType]];
     }
     return cell;
 }

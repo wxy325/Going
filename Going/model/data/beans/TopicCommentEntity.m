@@ -18,8 +18,11 @@
         self.userId = [dict noNilValueForKey:@"user_id"];
         self.userName = [dict noNilValueForKey:@"user_name"];
         self.content = [dict noNilValueForKey:@"content"];
-#warning time未处理
-        self.timeStr = [dict noNilValueForKey:@"time"];
+        NSString* timeStr = [dict noNilValueForKey:@"time"];
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        self.time = [dateFormatter dateFromString:timeStr];
     }
     return self;
 }

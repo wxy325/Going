@@ -20,7 +20,13 @@
 @interface WXYModuleNewTopicCell : UITableViewCell
 
 #pragma mark - Static Method
-+ (WXYModuleNewTopicCell*)makeCellWithType:(ModuleType)type;;
++ (WXYModuleNewTopicCell*)makeCellWithType:(ModuleType)type;
+
+@property (weak, nonatomic) IBOutlet UIImageView *buttonBackground;
+@property (weak, nonatomic) IBOutlet UIImageView *titleBackground;
+@property (weak, nonatomic) IBOutlet UIImageView *contentBackground;
+
+
 @property (weak, nonatomic) IBOutlet UITextField *contentTextField;
 - (IBAction)editEnd:(UITextField*)sender;
 

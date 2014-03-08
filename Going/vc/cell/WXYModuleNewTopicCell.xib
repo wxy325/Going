@@ -46,7 +46,11 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="buttonBackground" destination="0G2-sL-YW7" id="vZe-Zu-dGY"/>
+                <outlet property="contentBackground" destination="FgV-BC-LR8" id="jGH-NF-upl"/>
                 <outlet property="contentTextField" destination="WQA-Cx-GHV" id="alr-de-nN1"/>
+                <outlet property="titleBackground" destination="XAN-Yq-K2l" id="wqy-mM-Ozl"/>
+                <outlet property="titleTextField" destination="hhF-2P-Mfy" id="Roc-oB-ZRi"/>
             </connections>
         </tableViewCell>
     </objects>

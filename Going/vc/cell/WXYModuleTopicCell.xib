@@ -67,7 +67,7 @@
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                         <connections>
-                            <action selector="commentButtonPressed:" destination="b9R-E9-pZz" eventType="touchUpInside" id="PKr-VD-CTV"/>
+                            <action selector="zanButtonPressed:" destination="b9R-E9-pZz" eventType="touchUpInside" id="YEG-0l-ilW"/>
                         </connections>
                     </button>
                 </subviews>

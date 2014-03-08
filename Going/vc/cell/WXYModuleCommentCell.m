@@ -8,6 +8,8 @@
 
 #import "WXYModuleCommentCell.h"
 #import "WXYNetworkEngine.h"
+#import "WXYDataModel.h"
+
 
 @interface WXYModuleCommentCell ()
 
@@ -27,6 +29,7 @@
     {
         cell = array[0];
         cell.moduleType = type;
+        cell.dateLabel.textColor = SHARE_DM.moduleTypeColor[cell.moduleType];
     }
     return cell;
 }
@@ -62,9 +65,16 @@
 - (void)bindWithCommentEntity:(TopicCommentEntity*)c
 {
     NSMutableAttributedString* str = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@:%@",c.userName,c.content]];
-    [str setAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} range:NSMakeRange(0, c.userName.length + 1)];
+    [str setAttributes:@{NSForegroundColorAttributeName:SHARE_DM.moduleTypeColor[self.moduleType]} range:NSMakeRange(0, c.userName.length + 1)];
     self.contentTextView.attributedText = str;
-    self.dateLabel.text = [c.timeStr stringValue];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy.MM.dd HH:mm:ss"];
+    self.dateLabel.text = [dateFormatter stringFromDate:c.time];
+ 
+    
+    
+    
     float height = [WXYModuleCommentCell getCellHeightWithCommentEntity:c];
     
     CGRect rect = self.contentTextView.frame;

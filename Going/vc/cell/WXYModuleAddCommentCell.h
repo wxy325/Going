@@ -22,6 +22,8 @@
 
 
 @property (strong, nonatomic) IBOutlet UITextField* commentTextField;
+@property (weak, nonatomic) IBOutlet UIImageView* commentBackground;
+
 @property (weak, nonatomic) NSObject<WXYModuleAddCommentCellDelegate>* delegate;
 
 - (IBAction)editEnd:(UITextField*)sender;
