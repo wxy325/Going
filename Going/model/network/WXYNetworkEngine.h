@@ -58,4 +58,7 @@
                                             page:(NSNumber*)page
                                        onSucceed:(ArrayBlock)succeedBlock
                                          onError:(ErrorBlock)errorBlock;
+- (MKNetworkOperation*)moduleTopicZan:(NSNumber*)messageId
+                            onSucceed:(VoidBlock)succeedBlock
+                              onError:(ErrorBlock)errorBlock;
 @end

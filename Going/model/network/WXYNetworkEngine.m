@@ -13,7 +13,7 @@
 #import "NSDictionary+noNilValueForKey.h"
 
 //#define HOST_NAME @"10.60.42.200:12357/YimoERP"
-#define HOST_NAME @"localhost/going"
+#define HOST_NAME @"169.254.189.99/going"
 #define PHOTO_FOLDER @"photo/"
 
 #define URL_USER_REGISTER @"user_register"
@@ -224,6 +224,9 @@
             t.moduleType = @(type);
             t.userId = SHARE_SETTING_MANAGER.currentUserInfo.userId;
             t.time = [NSDate date];
+            t.good = @0;
+            t.comment = @0;
+            t.gooded = @NO;
             succeedBlock(t);
         }
     }
@@ -246,7 +249,7 @@
     MKNetworkOperation* op = nil;
     
     op = [self startOperationWithPath:URL_MODULE_TOPIC_LIST
-                            needLogin:NO
+                            needLogin:SHARE_SETTING_MANAGER.isLogin
                              paramers:@{@"type_id":@(type), @"page":page}
                           onSucceeded:^(MKNetworkOperation *completedOperation)
           {
@@ -294,6 +297,7 @@
                   c.userName = SHARE_SETTING_MANAGER.currentUserInfo.name;
                   c.content = content;
                   c.topicId = topicId;
+                  c.time = [NSDate date];
                   c.commentId = completedOperation.responseJSON[@"id"];
                   succeedBlock(c);
               }
@@ -305,6 +309,26 @@
                   errorBlock(error);
               }
           }];
+    
+    return op;
+}
+
+- (MKNetworkOperation*)moduleTopicZan:(NSNumber*)messageId
+                            onSucceed:(VoidBlock)succeedBlock
+                              onError:(ErrorBlock)errorBlock
+{
+    MKNetworkOperation* op = nil;
+    
+    op = [self startOperationWithPath:@"message_good" needLogin:YES paramers:@{@"message_id":messageId} onSucceeded:^(MKNetworkOperation *completedOperation) {
+        if (succeedBlock)
+        {
+            succeedBlock();
+        }
+    } onError:^(MKNetworkOperation *completedOperation, NSError *error) {
+        if (errorBlock) {
+            errorBlock(error);
+        }
+    }];
     
     return op;
 }

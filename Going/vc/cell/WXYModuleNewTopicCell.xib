@@ -24,7 +24,7 @@
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="detail" minimumFontSize="17" id="WQA-Cx-GHV">
                         <rect key="frame" x="57" y="134" width="243" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <textInputTraits key="textInputTraits" returnKeyType="send"/>
                         <connections>
                             <action selector="editEnd:" destination="DET-W9-74O" eventType="editingDidEndOnExit" id="LZv-oO-RBr"/>
@@ -37,7 +37,7 @@
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="title" minimumFontSize="17" id="hhF-2P-Mfy">
                         <rect key="frame" x="57" y="86" width="243" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                         <connections>
                             <action selector="titleEditEnd:" destination="DET-W9-74O" eventType="editingDidEndOnExit" id="YsB-ny-07q"/>

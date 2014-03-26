@@ -15,7 +15,7 @@
 
 @interface WXYModuleTopicCell ()
 @property (assign, nonatomic) ModuleType moduleType;
-@property (assign, nonatomic) WXYModuleTopicCellType type;
+
 - (void)updateButtonHigh:(UIView*)v byCellHeight:(float)height;
 
 @end

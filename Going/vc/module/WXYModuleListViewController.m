@@ -299,7 +299,22 @@
 }
 - (void)zanButtonPressedCell:(UITableViewCell*)cell
 {
-
+    NSIndexPath* indexPath = [self.tableView indexPathForCell:cell];
+    TopicEntity* t = self.datasourceArray[indexPath.row];
+    MBProgressHUD* hud = [self showNetworkWaitingHud];
+    [SHARE_NW_ENGINE moduleTopicZan:t.topicId onSucceed:^{
+        [hud hide:YES];
+        t.gooded = [NSNumber numberWithBool:YES];
+        NSNumber* g = t.good;
+        t.good = @(g.longLongValue + 1);
+        WXYModuleTopicCell* c = (WXYModuleTopicCell*)cell;
+        [c bindWithTopicEntity:t type:c.type];
+        
+    } onError:^(NSError *error)
+    {
+        [hud hide:YES];
+        [self showErrorHudWithText:@"系统错误"];
+    }];
 }
 #pragma mark - IBAction
 - (IBAction)backButtonPressed:(id)sender

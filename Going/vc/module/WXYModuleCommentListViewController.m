@@ -269,7 +269,21 @@
 }
 - (void)zanButtonPressedCell:(UITableViewCell*)cell
 {
-    
+    TopicEntity* t = self.topicEntity;
+    MBProgressHUD* hud = [self showNetworkWaitingHud];
+    [SHARE_NW_ENGINE moduleTopicZan:self.topicEntity.topicId onSucceed:^{
+        [hud hide:YES];
+        t.gooded = [NSNumber numberWithBool:YES];
+        NSNumber* g = t.good;
+        t.good = @(g.longLongValue + 1);
+        WXYModuleTopicCell* c = (WXYModuleTopicCell*)cell;
+        [c bindWithTopicEntity:t type:c.type];
+        
+    } onError:^(NSError *error)
+     {
+         [hud hide:YES];
+         [self showErrorHudWithText:@"系统错误"];
+     }];
 }
 #pragma mark - WXYModuleAddCommentCell Delegate
 - (void)textField:(UITextField*)textField didAddComment:(NSString*)comment

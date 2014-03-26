@@ -58,9 +58,9 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="COa-kq-zWQ">
-                    <rect key="frame" x="17" y="25" width="14" height="23"/>
+                    <rect key="frame" x="0.0" y="20" width="44" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="second_hand_back">
+                    <state key="normal" image="second_hand_back">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>

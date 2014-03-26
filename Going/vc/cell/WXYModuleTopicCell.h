@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, WXYModuleTopicCellType)
 @end
 
 @interface WXYModuleTopicCell : UITableViewCell
-
+@property (assign, nonatomic) WXYModuleTopicCellType type;
 #pragma mark - View
 @property (strong, nonatomic) IBOutlet UIImageView* headPhotoImageView;
 @property (strong, nonatomic) IBOutlet UILabel* titleLabel;

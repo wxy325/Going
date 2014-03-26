@@ -20,7 +20,7 @@
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Comment" minimumFontSize="17" id="bpn-Zi-sxE">
                         <rect key="frame" x="57" y="10" width="243" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <textInputTraits key="textInputTraits" returnKeyType="send"/>
                         <connections>
                             <action selector="editEnd:" destination="GOT-gs-M4o" eventType="editingDidEndOnExit" id="dka-Yc-ttU"/>
